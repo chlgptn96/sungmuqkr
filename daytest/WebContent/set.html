@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script language="javascript">
+
+
+function wqq() {
+	var text = document.getElementById("myname");
+	var arrRadio= document.getElementsByTagName("input");
+	if(text !=null){
+		alert(text.value+" 님 하이");
+		for(var i=0;i<arrRadio.length;i++){
+			if(arrRadio[i].type=="radio"&&arrRadio[i].checked){
+				alert(arrRadio[i].value+"과목을 좋아하시는군요");
+				break;
+			}
+		}
+	}
+	
+	
+}
+
+
+
+
+
+</script>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input type="text" id="myname">
+<input type="button" value="넘기기" onclick="wqq()"><br>
+<input type="radio" name="subject" value="HTML">HTML<br>
+<input type="radio" name="subject" value="CSS">CSS<br>
+<input type="radio" name="subject" value="HTML">HTML<br>
+</body>
+</html>
