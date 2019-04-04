@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script type="text/javascript">
+
+function un() {
+
+ var id = document.getElementById("id").value;
+
+ var aa = document.getElementById("bb");
+
+ var pw = document.getElementById("pw").value;
+
+ var repw = document.getElementById("repw").value;
+
+ var email = document.getElementById("email").value;
+
+ var jumin1 = document.getElementById("jumin1");
+
+ var jumin2 = document.getElementById("jumin2");
+
+ var arrNum1 = new Array();
+
+ var arrNum2 = new Array();
+
+ //aa.innerHTML=id;
+
+ var rep=/^[a-zA-Z0-9]{4,10}$/;
+
+ var rep1=/^[0-9a-zA-Z]*@[0-9a-zA-Z]*.[a-zA-Z]{2,3}$/i;
+
+ var rep2=/^[0-9]{11,11}$/;
+
+  ///^[a-zA-Z0-9]{4,10}*@[a-z]*.[a-zA-Z]{2,3}$/g;
+
+ if(!rep.test(id)){
+
+  alert("아이디 형식 틀려 ");
+
+  return false;
+
+ }if(!rep.test(pw)){
+
+  alert("비번 형식 틀려 ");
+
+  return false;
+
+ }if(pw!=repw){
+
+  alert("확인비번 틀려 ");
+
+  return false;
+
+ }if(!rep1.test(email)){
+
+  alert("이메일 틀려 ");
+
+  return false;
+
+ }
+
+ 
+
+ for (var i=0; i<jumin1.value.length; i++) {
+
+        arrNum1[i] = jumin1.value.charAt(i);
+
+    } // 주민번호 앞자리를 배열에 순서대로 담는다.
+
+
+
+
+    for (var i=0; i<jumin2.value.length; i++) {
+
+        arrNum2[i] = jumin2.value.charAt(i);
+
+    } // 주민번호 뒷자리를 배열에 순서대로 담는다.
+
+
+
+
+    var tempSum=0;
+
+
+
+
+    for (var i=0; i<jumin1.value.length; i++) {
+
+        tempSum += arrNum1[i] * (2+i);
+
+    } // 주민번호 검사방법을 적용하여 앞 번호를 모두 계산하여 더함
+
+
+
+
+    for (var i=0; i<jumin2.value.length-1; i++) {
+
+        if(i>=2) {
+
+            tempSum += arrNum2[i] * i;
+
+        }
+
+        else {
+
+            tempSum += arrNum2[i] * (8+i);
+
+        }
+
+    } // 같은방식으로 앞 번호 계산한것의 합에 뒷번호 계산한것을 모두 더함
+
+
+
+
+    if((11-(tempSum%11))%10!=arrNum2[6]) {
+
+        alert("올바른 주민번호가 아닙니다.");
+
+        jumin1.value = "";
+
+        jumin2.value = "";
+
+        
+
+        return false;
+
+    }else{
+
+
+
+
+     // ------------ 생일 자동 등록 -----------
+
+        if(arrNum2[0]==1 || arrNum2[0]==2) {
+
+         
+
+            var y = parseInt(jumin1.value.substring(0,2));
+
+            var m = parseInt(jumin1.value.substring(2,4));
+
+            var d = parseInt(jumin1.value.substring(4,6));
+
+            join.years.value = 1900 + y;
+
+            join.month.value = m;
+
+            join.day.value = d;
+
+
+
+
+        }
+
+        else if(arrNum2[0]==3 || arrNum2[0]==4) {
+
+            var y = parseInt(jumin1.value.substring(0,2));
+
+            var m = parseInt(jumin1.value.substring(2,4));
+
+            var d = parseInt(jumin1.value.substring(4,6));
+
+            join.years.value = 2000 + y;
+
+            join.month.value = m;
+
+            join.day.value = d;
+
+
+
+
+        }else{alert("남자여자도아니네");return false;}
+
+     
+
+     // 관심분야, 자기소개 미입력시 하라는 메시지 출력
+
+        if(join.inter[0].checked==false &&
+
+            join.inter[1].checked==false &&
+
+            join.inter[2].checked==false &&
+
+            join.inter[3].checked==false &&
+
+            join.inter[4].checked==false) {
+
+            alert("관심분야를 골라주세요");
+
+            return false;
+
+        }
+
+        if(join.self.value=="") {
+
+            alert("자기소개를 적어주세요");
+
+            join.self.focus();
+
+            return false;
+
+        }
+
+    }alert("회원가입이 완료되었습니다."); 
+
+ 
+
+ 
+
+}
+
+
+
+
+</script>
+
+<meta charset="EUC-KR">
+
+<title>Insert title here</title>
+
+</head>
+
+<body>
+
+<form name="join" onsubmit="return un()" method="post">
+
+id : <input type="text" id="id"><br>
+
+pw : <input type="password" id="pw"><br>
+
+repw : <input type="password" id="repw"><br>
+
+email : <input type="text" id="email"><br>
+
+민번 : <input type="text" id="jumin1" maxlength="6">-<input type="password" id="jumin2" maxlength="7"><br>
+
+생일 : <input type="text" style="width:80px" id="years" readonly/>년
+
+               <input type="text" style="width:80px" id="month" readonly/>월
+
+               <input type="text" style="width:80px" id="day" readonly/>일<br>
+
+        <b>관심분야:</b>
+
+          <input type="checkbox" name="inter" value="컴퓨터">컴퓨터</input>
+
+               <input type="checkbox" name="inter" value="인터넷">인터넷</input>
+
+               <input type="checkbox" name="inter" value="여행">여행</input>
+
+               <input type="checkbox" name="inter" value="영화감상">영화감상</input>
+
+               <input type="checkbox" name="inter" value="음악감상">음악감상</input><br>
+
+  <b>자기소개:</b>
+
+  <textarea name="self" cols="40" rows="7"></textarea><br>
+
+  
+
+<input type="submit" value="승인" >
+
+<input type="reset" value="다시">
+
+<br>
+
+</form>
+
+<div id="bb">aa</div>
+
+</body>
+
+</html>
