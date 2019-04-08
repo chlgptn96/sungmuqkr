@@ -1,0 +1,3186 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+
+<link rel="stylesheet" type="text/css" href="/rfc3/user/domain/www.kunsan.ac.kr.80/0/8.css" /><!-- 공통 base -->
+<link rel="stylesheet" type="text/css" href="/rfc3/user/domain/www.kunsan.ac.kr.80/0/9.css" /><!-- 공통 board -->
+<link rel="stylesheet" type="text/css" href="/rfc3/user/domain/www.kunsan.ac.kr.80/0/10.css" /><!--공통 bottom -->
+<link rel="stylesheet" type="text/css" href="/rfc3/user/domain/www.kunsan.ac.kr.80/0/18.css" /><!--공통 gnb_top -->
+<link rel="stylesheet" type="text/css" href="/rfc3/user/domain/www.kunsan.ac.kr.80/0/573.css" /><!-- layout -->
+<link rel="stylesheet" type="text/css" href="/rfc3/user/domain/www.kunsan.ac.kr.80/0/571.css" /><!-- gnb -->
+<link rel="stylesheet" type="text/css" href="/rfc3/user/domain/www.kunsan.ac.kr.80/0/574.css" /><!-- lnb -->
+<link rel="stylesheet" type="text/css" href="/rfc3/user/domain/www.kunsan.ac.kr.80/0/575.css" /><!-- main -->
+<link rel="stylesheet" type="text/css" href="/rfc3/user/domain/www.kunsan.ac.kr.80/0/572.css" /><!-- inc -->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, width=device-width" />
+<title> 군산대학교 </title>
+<link href="/images/001kunsan/main/favicon.ico" rel="shortcut icon"/>
+<link rel="stylesheet" type="text/css" href="/jquery/jquery-ui.min.css" />
+<script type="text/javascript" src="/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/jquery/print/printThis.js"></script>
+<script type="text/javascript" src="/jquery/rwdimg/jquery.rwdImageMaps.min.js"></script>
+<script type="text/javascript" src="/jquery/fxslide/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/jquery/bxslide/jquery.bxslider.min.js"></script>
+
+                                <!-- 공통 src -->
+
+<script type="text/javascript" src="/rfc3/user/domain/www.kunsan.ac.kr.80/0/70.js"></script><!-- 공통 common -->
+<script type="text/javascript" src="/rfc3/user/domain/www.kunsan.ac.kr.80/0/71.js"></script><!-- 공통 noticetab -->
+<script src="/js/jquery.rwdImageMaps.min.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+
+<!-- s:공통 스킵(skip) -->
+<div id="skip">
+<ul>
+<!--<li><a href="#gnavi">주 메뉴 바로가기</a></li>-->
+<li><a href="#a_content">본문 바로가기</a></li>
+<!--<li><a href="#footer">카피라이트 바로가기</a></li>-->
+</ul>
+</div>
+                                                                        
+<!-- e:공통 스킵 -->
+
+<div id="header_group">
+<!-- s:공통 글로벌메뉴(gnb_top) -->
+<div id="header_popup">
+<div class="ly_center">
+
+<div class="hp_button">
+<strong>POPUP ZONE</strong>
+<span><a class="prev" href="#PREV"><img src="/images/001kunsan/main/popup_btn01.png" alt="이전" /></a></span>
+<span><a class="stop on" href="#STOP"><img src="/images/001kunsan/main/popup_btn03.png" alt="정지" /></a></span>
+<span><a class="play" href="#PLAY"><img src="/images/001kunsan/main/popup_btn05.png" alt="재생" /></a></span>
+<span><a class="next" href="#NEXT"><img src="/images/001kunsan/main/popup_btn02.png" alt="다음" /></a></span>
+<p><span class="page">1</span>/<span class="total">1</span></p>
+</div>
+
+<ul class="hp_slide">
+			<li>
+			<a href="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105001001000&boardId=BBS_0000008&dataSid=79724" target="_blank" title="새창열림">
+			<img src="/upload_data/popup/info/155063604759107.jpg" alt="내게 꼭! 필요한 공지사항 및 학사정보를 위해
+군산대학교 앱을 들이십시오!
+앱 설치방법 : 앱스토어 검색창에 ‘군산대학교’ 검색
+로그인 방법 : 통합정보 ID(학번, 사번), 패스워드
+             [신입생은 학번 부여 후 로그인]" />
+			</a>
+			</li>
+</ul>
+<div class="hp_close">
+<span class="today"><input type="checkbox" id="hx-com-popup-close" /> <label for="hx-com-popup-close">오늘 하루 열지 않기</label></span>
+</div>
+
+</div>
+</div>
+<script type="text/javascript">//<![CDATA[
+$(function(){
+	//2018-02-22추가=============포커스중에슬라이딩중지
+	$('#header_popup .hp_slide > li > a').on('focusin', function(){
+		if (popSlidePlay) {
+			popSlide.flexslider('stop');
+		}
+	});
+	$('#header_popup .hp_slide > li > a').on('focusout', function(){
+		if (popSlidePlay) {
+			popSlide.flexslider('play');
+		}
+	});
+
+	//2017-07-28추가=============
+	//$('#header_popup .hp_slide img[usemap]').rwdImageMaps();
+	//==========================
+	var popSlidePlay = $('#hx-com-popup-close').is(':checked') ? false: true;
+	var popSlide = $('#header_popup').flexslider({
+		animation: 'fade',
+		selector: '.hp_slide > li',
+		//easing: 'swing',
+		//direction: 'horizontal',
+		slideshow: popSlidePlay,
+		slideshowSpeed: 7000,
+		animationSpeed: 2000,
+		fadeFirstSlide: false,
+		controlNav: false,
+		directionNav: false,
+		before: function(slider){
+			var next = slider.currentSlide + 1;
+			$('#header_popup .page').text(next>slider.count?1:next);
+		}
+	});
+	$('#header_popup .next').click(function(){
+		if (popSlidePlay) {
+			popSlide.flexslider('stop');
+			popSlide.flexslider('next');
+			popSlide.flexslider('play');
+		} else {
+			popSlide.flexslider('next');
+		}
+		return false;
+	});
+	$('#header_popup .prev').click(function(){
+		if (popSlidePlay) {
+			popSlide.flexslider('stop');
+			popSlide.flexslider('prev');
+			popSlide.flexslider('play');
+		} else {
+			popSlide.flexslider('prev');
+		}
+		return false;
+	});
+	$('#header_popup .stop').click(function(){
+		popSlidePlay = false;
+		popSlide.flexslider('stop');
+		$('#header_popup .stop').removeClass('on');
+		$('#header_popup .play').addClass('on');
+		return false;
+	});
+	$('#header_popup .play').click(function(){
+		popSlidePlay = true;
+		popSlide.flexslider('play');
+		$('#header_popup .play').removeClass('on');
+		$('#header_popup .stop').addClass('on');
+		return false;
+	});
+	//팝업존오늘하루열지않기
+	$('#hx-com-popup-close').click(function(){
+		var today = new Date();
+		if ($(this).is(':checked')) {
+			today.setTime(today.getTime()+(1*24*60*60*1000));
+			document.cookie = 'popSlide=off;path=/;expires='+today.toGMTString();
+			//공통상단팝업존닫기
+			$('#hx-com-popup-open').trigger('click');
+		} else {
+			today.setTime(today.getTime()-1);
+			document.cookie = 'popSlide=;path=/;expires='+today.toGMTString();
+		}
+	});
+	//팝업존열기닫기
+	$('#hx-com-popup-open').click(function(){
+		var curr = $(this);
+		var topen = curr.data('open') || '팝업열기';
+		var tclose = curr.data('close') || '팝업닫기';
+		if ($('#header_popup').css('display') == 'none') {
+			//팝업존열기
+			$('#header_popup').slideDown(function(){
+				//슬라이드재생
+				if (popSlidePlay) {
+					popSlide.flexslider('play');
+					$('#header_popup .play').removeClass('on');
+					$('#header_popup .stop').addClass('on');
+				}
+			});
+			curr.children('.h_down_icon').addClass('on').end().attr('href','#'+tclose).html(curr.html().replace(topen,tclose));
+		} else {
+			//슬라이드정지
+			popSlide.flexslider('stop');
+			$('#header_popup .stop').removeClass('on');
+			$('#header_popup .play').addClass('on');
+			//팝업존닫기
+			$('#header_popup').slideUp();
+			curr.children('.h_down_icon').removeClass('on').end().attr('href','#'+topen).html(curr.html().replace(tclose,topen));
+		}
+		return false;
+	});
+});
+//]]></script>
+
+
+
+
+
+
+
+
+<div id="header_top">
+<div class="ly_center">
+
+
+	<div class="header_left">
+	<ul>
+	<li class="hl_txt01 on">
+	
+
+		<a href="/index.kunsan?contentsSid=583" target="_blank" title="새창열림"><img src="/images/000inc/home01.png" alt="군산대학교홈페이지" /></a>
+	
+	</li>
+	<li class="hl_txt02"><a href="/iphak/index.kunsan" target="_blank" title="새창열림">입학안내</a></li>
+	<li class="hl_txt02"><a href="https://portal.kunsan.ac.kr/index.do" target="_blank" title="새창열림">정보서비스</a></li>
+
+	<!--li class="hl_txt03"><a href="#PORTAL" target="_blank" title="새창열림" onclick="alert('준비중입니다.');return false;">KNU포털</a></li-->
+	<!-- <li class="hl_txt04" id="info_wrap"><a class="hx-com-dropdown" href="#SUPPORT" id="info_a_btn">정보서비스<span class="h_down_icon" id="info_span_btn"></span></a>
+
+		<ul class="hl_down01">
+		<li><a href="https://mail.kunsan.ac.kr/" target="_blank" title="새창열림">웹메일<span class="h_win_icon"></span></a></li>
+		<li><a href="https://tkis.kunsan.ac.kr/" target="_blank" title="새창열림">통합정보시스템<span class="h_win_icon"></span></a></li>
+		<li><a href="https://kunsan.korus.ac.kr/" target="_blank" title="새창열림">KORUS<span class="h_win_icon"></span></a></li>
+		<li><a href="http://e-class.kunsan.ac.kr/ilos/sso_new/index.jsp" target="_blank" title="새창열림">e-Class<span class="h_win_icon"></span></a></li>
+		<li><a href="http://research.kunsan.ac.kr:8080" target="_blank" title="새창열림">연구지원시스템<span class="h_win_icon"></span></a></li>
+		</ul>
+
+	</li> -->
+	</ul>
+	</div>
+
+
+
+
+
+	<div class="header_right">
+	<ul>
+	<li class="hr_txt01"><a href="/index.kunsan?loginMode=login&amp;returnUrl=http%3A%2F%2Fwww.kunsan.ac.kr%2Findex.kunsan%3Fsso%3Dok">로그인</a></li>
+
+		<li class="hr_txt02"><a href="/index.kunsan?menuCd=DOM_000000107002000000">사이트맵</a></li>
+	
+	<li class="hr_txt03" id="lang_wrap"><a class="hx-com-dropdown" href="#KOREAN" id="lang_a_btn">한국어<span class="h_down_icon" id="lang_span_btn"></span></a>
+
+		<ul class="hl_down01">
+		
+		<li><a href="/en/index.kunsan" target="_blank" title="새창열림">English</a></li>
+		<li class="chin_font"><a href="/ch/index.kunsan" target="_blank" title="새창열림">简体中文</a></li>
+		
+		</ul>
+
+	</li>
+	<li class="hr_txt04" id="sns_wrap"><a class="hx-com-dropdown" href="#SNS" id="sns_a_btn">SNS<span class="h_down_icon" id="sns_span_btn"></span></a>
+
+		<ul class="hl_down01">
+		<li><a href="https://www.facebook.com/ksnuniv" target="_blank" title="새창열림">페이스북<span class="h_win_icon"></span></a></li>
+		<li><a href="https://twitter.com/KunsanUniv" target="_blank" title="새창열림">트위터<span class="h_win_icon"></span></a></li>
+		<li><a href="https://blog.naver.com/kunsanblog" target="_blank" title="새창열림">블로그<span class="h_win_icon"></span></a></li>
+		<li><a href="https://www.youtube.com/channel/UCMa-iliD3RCPflvx2XAHwzQ" target="_blank" title="새창열림">유튜브<span class="h_win_icon"></span></a></li>
+		</ul>
+
+	</li>
+	<li class="hr_txt05"><a href="/index.kunsan?menuCd=DOM_000000107003000000">통합검색</a></li>
+	<li class="hr_txt06"><a href="#POPUP" id="hx-com-popup-open" data-close="팝업닫기" data-open="팝업열기">팝업닫기<span class="h_down_icon on"></span></a></li>
+	</ul>
+	</div>
+
+
+
+		<div id="all_search">
+			<div class="all_search_guide">
+			<strong>통합검색</strong>
+			<div class="top_search">
+				<form action="/index.kunsan?menuCd=DOM_000000107003000000" method="post">
+                                 <input type="hidden" name="sso" value="ok" />
+				<input type="hidden" name="type" value="total" />
+				<fieldset>
+				<legend>통합검색</legend>
+				<input type="text" name="searchTerm" value="" title="검색어를 입력해 주세요" placeholder="검색어를 입력해 주세요" /><button type="submit">검색</button>
+				</fieldset>
+				</form>
+			</div>
+			</div>
+			<span>인기검색어, 최신검색어등 원하시는 검색어를 입력하시면 상세 검색 내용을 보실수 있습니다.</span>
+		</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($){
+	/**
+	 * ===================================================================================
+	 * = 정보서비스 & Language & SNS (170731_lmj_추가)
+	 * ===================================================================================
+	 */
+	/**
+	 * 정보서비스
+	 */
+	var $info = $("#info_wrap");
+		$info.ul = $info.find(">ul");
+	/**
+	 * Language
+	 */
+	var $lang = $("#lang_wrap");
+		$lang.ul = $lang.find(">ul");
+	var $lang2 = $("#lang_wrap2");
+		$lang2.ul = $lang2.find(">ul");
+	/**
+	 * SNS
+	 */
+	var $sns = $("#sns_wrap");
+		$sns.ul = $sns.find(">ul");
+	var $sns2 = $("#sns_wrap2");
+		$sns2.ul = $sns2.find(">ul");
+
+	$("body").bind("click",function(e){
+		/**
+		 * 정보서비스 관련
+		 */
+		if($info.has(e.target).length > 0) {
+			if($info.ul.css("display") == "none") {
+				if($info.ul.is(":animated")) return false;
+				/**
+				 * 다른 슬라이드 닫기
+				 */
+				hideLangSlide();
+				hideSnsSlide();
+				$info.ul.slideDown(200,"easeInOutQuart");
+				return false;
+			} else if(e.target.id == "info_a_btn" || e.target.id == "info_span_btn") {
+				hideInfoSlide();
+				return false;
+			}
+
+		/**
+		 * Language 관련
+		 */
+		} else if($lang.has(e.target).length > 0) {
+			if($lang.ul.css("display") == "none") {
+				if($lang.ul.is(":animated")) return false;
+				/**
+				 * 다른 슬라이드 닫기
+				 */
+				hideInfoSlide();
+				hideSnsSlide();
+				$lang.ul.slideDown(200,"easeInOutQuart");
+				return false;
+			} else if(e.target.id == "lang_a_btn" || e.target.id == "lang_span_btn") {
+				hideLangSlide();
+				return false;
+			}
+		/**
+		 * Language2 관련(모바일에선 다른 타겟임)
+		 */
+		} else if($lang2.has(e.target).length > 0) {
+			if($lang2.ul.css("display") == "none") {
+				if($lang2.ul.is(":animated")) return false;
+				/**
+				 * 다른 슬라이드 닫기
+				 */
+				hideInfoSlide();
+				hideSnsSlide();
+				$lang2.ul.slideDown(200,"easeInOutQuart");
+				return false;
+			} else if(e.target.id == "lang_a_btn2" || e.target.id == "lang_span_btn2") {
+				hideLangSlide();
+				return false;
+			}
+		/**
+		 * SNS 관련
+		 */
+		} else if($sns.has(e.target).length > 0) {
+			if($sns.ul.css("display") == "none") {
+				if($sns.ul.is(":animated")) return false;
+				/**
+				 * 다른 슬라이드 닫기
+				 */
+				hideInfoSlide();
+				hideLangSlide();
+				$sns.ul.slideDown(200,"easeInOutQuart");
+				return false;
+			} else if(e.target.id == "sns_a_btn" || e.target.id == "sns_span_btn") {
+				hideSnsSlide();
+				return false;
+			}
+		/**
+		 * SNS2 관련(모바일에선 다른 타겟임)
+		 */
+		} else if($sns2.has(e.target).length > 0) {
+			if($sns2.ul.css("display") == "none") {
+				if($sns2.ul.is(":animated")) return false;
+				/**
+				 * 다른 슬라이드 닫기
+				 */
+				hideInfoSlide();
+				hideLangSlide();
+				$sns2.ul.slideDown(200,"easeInOutQuart");
+				return false;
+			} else if(e.target.id == "sns_a_btn2" || e.target.id == "sns_span_btn2") {
+				hideSnsSlide();
+				return false;
+			}
+		/**
+		 * 이외 영역일 시
+		 */
+		} else {
+			if($info.ul.css("display") != "none" && $info.has(e.target).length == 0) {			// 정보서비스
+				hideInfoSlide();
+				return true;
+			} else if(($lang.ul.css("display") != "none" && $lang.has(e.target).length == 0) || ($lang2.ul.css("display") != "none" && $lang2.has(e.target).length == 0)) {	// Language
+				hideLangSlide();
+				return true;
+			} else if(($sns.ul.css("display") != "none" && $sns.has(e.target).length == 0) || ($sns2.ul.css("display") != "none" && $sns2.has(e.target).length == 0)) {		// SNS
+				hideSnsSlide();
+				return true;
+			}
+		}
+	});
+
+
+
+
+	//2017-08-22 추가(드롭다운메뉴에마우스오버이벤트)
+	$("body").bind("mouseenter focusin",function(e){
+		if ($('#gnavi_btn').css('display')=='none') {
+		if($info.has(e.target).length > 0) {
+			if($info.ul.css("display") == "none") {
+				if($info.ul.is(":animated")) return false;
+				hideLangSlide();
+				hideSnsSlide();
+				$info.ul.slideDown(200,"easeInOutQuart");
+				return false;
+			}
+		} else if($lang.has(e.target).length > 0) {
+			if($lang.ul.css("display") == "none") {
+				if($lang.ul.is(":animated")) return false;
+				hideInfoSlide();
+				hideSnsSlide();
+				$lang.ul.slideDown(200,"easeInOutQuart");
+				return false;
+			}
+		} else if($lang2.has(e.target).length > 0) {
+			if($lang2.ul.css("display") == "none") {
+				if($lang2.ul.is(":animated")) return false;
+				hideInfoSlide();
+				hideSnsSlide();
+				$lang2.ul.slideDown(200,"easeInOutQuart");
+				return false;
+			}
+		} else if($sns.has(e.target).length > 0) {
+			if($sns.ul.css("display") == "none") {
+				if($sns.ul.is(":animated")) return false;
+				hideInfoSlide();
+				hideLangSlide();
+				$sns.ul.slideDown(200,"easeInOutQuart");
+				return false;
+			}
+		} else if($sns2.has(e.target).length > 0) {
+			if($sns2.ul.css("display") == "none") {
+				if($sns2.ul.is(":animated")) return false;
+				hideInfoSlide();
+				hideLangSlide();
+				$sns2.ul.slideDown(200,"easeInOutQuart");
+				return false;
+			}
+		} else {
+				if($info.ul.is(":animated")) return false;
+				if($lang.ul.is(":animated")) return false;
+				if($lang2.ul.is(":animated")) return false;
+				if($sns.ul.is(":animated")) return false;
+				if($sns2.ul.is(":animated")) return false;
+				hideInfoSlide();
+				hideLangSlide();
+				hideSnsSlide();
+				return false;
+
+		}
+		}
+	});
+	//2017-08-22 추가(드롭다운메뉴에서브링크클릭시박스닫히게)
+	$('#header_top .hx-com-dropdown ~ ul a').click(function(e){
+		var a = $(this);
+		var ul = a.parent().parent();
+		if (a.attr('target') == '_blank') {
+			if (ul.css('display') != 'none') {
+				ul.slideUp(100,'easeInOutQuart');
+			}
+		}
+	});
+
+
+
+
+	/**
+	 * 정보서비스 닫기
+	 */
+	function hideInfoSlide(){
+		$info.ul.slideUp(200,"easeInOutQuart");
+	}
+	/**
+	 * Language 닫기
+	 */
+	function hideLangSlide(){
+		$lang.ul.slideUp(200,"easeInOutQuart");
+		$lang2.ul.slideUp(200,"easeInOutQuart");
+	}
+	/**
+	 * SNS 닫기
+	 */
+	function hideSnsSlide(){
+		$sns.ul.slideUp(200,"easeInOutQuart");
+		$sns2.ul.slideUp(200,"easeInOutQuart");
+	}
+});
+//]]>
+</script>
+
+<script type="text/javascript">//<![CDATA[
+$(function(){
+	//드롭다운메뉴열기닫기
+/*20170731_주석처리
+	$('.hx-com-dropdown').on('click',function(){
+		var curr = $(this);
+		var box = curr.next();
+		if (box.css('display') == 'none') {
+			//통합검색숨기기
+			$('#all_search').css('display','none');
+			//드롭다운메뉴숨기기
+			$('.hx-com-dropdown').not(curr).children('.ass('on').end().next().css('display','none');
+			//펼치기
+			box.slideDown(600,'easeOutBounce');
+			curr.children('.h_down_icon').addClass('on');
+		} else {
+			box.slideUp(200);
+			curr.children('.h_down_icon').removeClass('on');
+		}
+		return false;
+	});*/
+
+
+
+/*
+	//통합검색열기닫기
+	$('.hx-com-search').on('click',function(){
+		if ($('#all_search').css('display') == 'none') {
+			//드롭다운메뉴숨기기
+			$('.hx-com-dropdown').children('.h_down_icon').removeClass('on').end().next().css('display','none');
+			//모바일메뉴닫기
+			if ($('#gnavi_btn').css('display') != 'none') $('#gnavi').css('display','none');
+			//펼치기
+			$('#all_search').css('display','block');
+		} else {
+			$('#all_search').css('display','none');
+		}
+		return false;
+	});
+*/
+	//통합검색열기닫기_test_170908
+	$('.hx-com-search').on("mouseenter",function(){
+		//드롭다운메뉴숨기기
+		$('.hx-com-dropdown').children('.h_down_icon').removeClass('on').end().next().css('display','none');
+		//모바일메뉴닫기
+		if ($('#gnavi_btn').css('display') != 'none') $('#gnavi').css('display','none');
+		//펼치기
+		$('#all_search').css('display','block');
+		return false;
+	});
+	// 통합검색박스 마우스 벗어날 시
+	$('#all_search').on("mouseleave",function(){
+		$('#all_search').css('display','none');
+		return false;
+	});
+
+
+	//통합검색폼전송
+	$('#all_search form').on('submit',function(){
+		var inp = $(this).find('[name=searchTerm]');
+		if (!inp.val()) {
+			//alert(inp.attr('title'));
+			return false;
+		}
+		return true;
+	});
+});
+//]]></script>
+
+
+
+
+                                                                                                                                                                                   
+<!-- e:공통 글로벌메뉴 -->
+<!-- s:공통 전체메뉴(gnb) -->
+
+
+<form name="main" action="/index.kunsan" method="POST">
+	<input type="hidden" name="contentsSid" value="583"/>
+</form>
+<div id="header" class="sticky">
+
+	<div class="ly_center">
+	<h1>
+	
+
+		<a href="/index.kunsan?contentsSid=583">
+	
+	<span class="logo"><img src="/images/001kunsan/inc/logo.png" alt="군산대학교" /></span>
+	<!--<span class="logo_text01"></span>-->
+	</a>
+	</h1>
+
+	<span id="gnavi_btn"><a class="hx-com-menu" href="#MENU"><img src="/images/000inc/top_menu01.jpg" alt="메뉴보기" /></a></span>
+	<span id="gsearch_btn"><a class="hx-com-search" href="#SEARCH"><img src="/images/000inc/top_search01.jpg" alt="통합검색" /></a></span>
+	</div>
+
+
+
+	<!-- s:gnavi -->
+	<div id="gnavi">
+	<div id="gnavibg"></div>
+	<div class="ly_center">
+	<div id="gnavibox">
+	<!-- <div class="close">닫기</div> -->
+
+
+
+
+
+		<div class="gnb_top_mo">
+		<ul>
+		<li><a href="/index.kunsan">HOME</a></li>
+
+
+        <!--<li><a href="/index.kunsan?loginMode=login&amp;returnUrl=http%3A%2F%2Fwww.kunsan.ac.kr%2Findex.kunsan%3Fsso%3Dok">로그인</a></li>-->
+
+
+		<li><a href="/index.kunsan?menuCd=DOM_000000107002000000">사이트맵</a></li>
+		<li id="lang_wrap2"><a class="hx-com-dropdown" href="#KOREAN" id="lang_a_btn2">한국어<span class="h_down_icon" id="lang_span_btn2"></span></a>
+			<ul class="hl_down01">
+			<li><a href="/en/index.kunsan" target="_blank" title="새창열림">English</a></li>
+			<li class="chin_font"><a href="/ch/index.kunsan" target="_blank" title="새창열림">简体中文</a></li>
+			</ul>
+		</li>
+		<li id="sns_wrap2"><a class="hx-com-dropdown" href="#SNS" id="sns_a_btn2">SNS<span class="h_down_icon" id="sns_span_btn2"></span></a>
+			<ul class="hl_down01">
+			<li><a href="https://www.facebook.com/ksnuniv" target="_blank" title="새창열림">페이스북<span class="h_win_icon"></span></a></li>
+			<!--li><a href="https://twitter.com/KunsanUniv" target="_blank" title="새창열림">트위터<span class="h_win_icon"></span></a></li-->
+			</ul>
+		</li>
+		</ul>
+		</div>
+
+
+
+
+
+
+
+		<ul>
+		
+					<li class="gnavi">
+						<a href="/index.kunsan?menuCd=DOM_000000102000000000">대학소개</a>
+						
+								<div class="ly_center topsub_img01">
+								<p>대학소개</p>
+								<ul>
+								
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000102005000000">총장실</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102005001000">인사말</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102005002000">주요약력</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102005003000">역대총장</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102005004000">총장에게 바란다</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102005005000">업무추진비</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000102003000000">대학조직</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102003005000">조직도</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000102009000000">학교상징</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102009001000">교시/교육목적</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102009002000">정장/문장</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102009003000">교기/교가</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102009004000">캐릭터</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102009005000">교목/교화</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000102007000000">대학현황</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102007004000">학생현황</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102007001000">교직원현황</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102007002000">예/결산현황</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102007003000">등록금현황</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000102008000000">학교연혁</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102008001000">도약기(2010s)</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102008002000">도약기(2000s)</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102008003000">도약기(1990s)</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102008004000">발전기</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102008005000">성장기</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102008006000">태동기</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000102001000000">홍보</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102001001000">사이버캠퍼스투어</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102001004000">홍보동영상</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000102002000000">VISION</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102002001000">VISION 2022</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102002003000">VISION 2024</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000102006000000">학교 오시는 길</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102006001000">미룡캠퍼스</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000102006003000">새만금캠퍼스</a></li>
+															
+													</ul>
+													
+										</li>
+										
+								</ul>
+								</div>
+								
+					</li>
+					
+					<li class="gnavi">
+						<a href="/index.kunsan?menuCd=DOM_000000101000000000">대학/대학원</a>
+						
+								<div class="ly_center topsub_img02">
+								<p><span>대학/</span>대학원</p>
+								<ul>
+								
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000101001000000">대학</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101001009000" target="_blank" title="새창열림">인문대학<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101001010000" target="_blank" title="새창열림">예술대학<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101001011000" target="_blank" title="새창열림">사회과학대학<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101001008000" target="_blank" title="새창열림">자연과학대학<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101001012000" target="_blank" title="새창열림">공과대학<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101001013000" target="_blank" title="새창열림">해양과학대학<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101001014000" target="_blank" title="새창열림">산학융합공과대학<span class="h_win_icon"></span></a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000101002000000">대학원</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101002001000" target="_blank" title="새창열림">일반대학원<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101002002000" target="_blank" title="새창열림">산업대학원<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101002003000" target="_blank" title="새창열림">경영행정대학원<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000101002004000" target="_blank" title="새창열림">교육대학원<span class="h_win_icon"></span></a></li>
+															
+													</ul>
+													
+										</li>
+										
+								</ul>
+								</div>
+								
+					</li>
+					
+					<li class="gnavi">
+						<a href="/index.kunsan?menuCd=DOM_000000103000000000">학사안내</a>
+						
+								<div class="ly_center topsub_img03">
+								<p><span>학사</span>안내</p>
+								<ul>
+								
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000103001000000">학사일정</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103001001000">학부학사일정</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103001002000">대학원학사일정</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000103007000000">학사지원</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103007001000">서식자료실</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103007002000">제증명발급</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103007003000">학생증발급</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103007004000">인터넷증명</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103007005000">병무안내</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000103003000000">수업정보</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103003001000">수강신청</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103003002000">복수(부)전공</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103003003000">시험및성적관리</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103003004000">학점인정</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103003005000">계절수업</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103003006000">교직과정이수</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000103005000000">장학</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103005001000">교내장학금</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103005002000">마일리지장학금</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103005003000">외부장학금</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103005004000">정부학자금 대출</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000103006000000">학적정보</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103006001000">휴/복학</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103006002000">자퇴/제적</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103006003000">모집단위간이동</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103006004000">조기졸업</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103006005000">학적부정정</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103006006000">재입학</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000103002000000">교과과정편람</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103002001000">대학교과과정편람</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103002002000">대학원교과과정편람</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000103004000000">등록</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000103004001000">등록안내</a></li>
+															
+													</ul>
+													
+										</li>
+										
+								</ul>
+								</div>
+								
+					</li>
+					
+					<li class="gnavi">
+						<a href="/index.kunsan?menuCd=DOM_000000104000000000">캠퍼스 LIFE</a>
+						
+								<div class="ly_center topsub_img04">
+								<p><span>캠퍼스</span> LIFE</p>
+								<ul>
+								
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000104001000000">학생활동</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104001001000" target="_blank" title="새창열림">총학생회<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104001004000">총여학생회</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104001002000">총동아리연합회</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104001003000">행사일정</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000104002000000">복지시설</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104002007000">식당</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104002002000">통학버스</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104002003000">장애학생지원센터</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104002004000">학생생활관</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104002005000">생활협동조합</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104002006000">금융기관</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000104003000000">보건시설</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104003001000">보건진료소</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104003002000">학생의료공제회</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000104007000000">정보서비스</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104007001000" target="_blank" title="새창열림">인터넷디스크<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104007003000" target="_blank" title="새창열림">무선인터넷<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104007004000" target="_blank" title="새창열림">인터넷증명서발급<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104007005000" target="_blank" title="새창열림">시설공간관리시스템<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104007006000" target="_blank" title="새창열림">사이버교육<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104007007000" target="_blank" title="새창열림">연구실안전교육센터<span class="h_win_icon"></span></a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000104008000000">자주 찾는 서비스</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104008001000" target="_blank" title="새창열림">웹메일<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104008002000" target="_blank" title="새창열림">통합정보시스템<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104008003000" target="_blank" title="새창열림">KORUS<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104008004000" target="_blank" title="새창열림">e-Class시스템<span class="h_win_icon"></span></a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104008005000">연구지원시스템</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000104008006000" target="_blank" title="새창열림">(구)전자문서시스템<span class="h_win_icon"></span></a></li>
+															
+													</ul>
+													
+										</li>
+										
+								</ul>
+								</div>
+								
+					</li>
+					
+					<li class="gnavi">
+						<a href="/index.kunsan?menuCd=DOM_000000105000000000">KSNU 광장</a>
+						
+								<div class="ly_center topsub_img05">
+								<p>KSNU 광장</p>
+								<ul>
+								
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000105001000000">학교소식</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105001001000">공지사항</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105001002000">학사/장학</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105001003000">모집/안내/공고</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105001004000">행사/뉴스</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105001005000">교육/연구</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000105002000000">참여/신청</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105002001000">학사상담</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105002003000">자유게시판</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000105003000000">생활정보</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105003004000">주거정보</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105003003000">아르바이트</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105003002000">장터</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105003001000">분실물</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000105004000000">웹진</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105004001000">KSNU소식</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105004002000">군산대언론사</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000105005000000">사진/영상</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105005001000">군산대학교포토</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000105005002000">군산대학교인터넷 방송</a></li>
+															
+													</ul>
+													
+										</li>
+										
+								</ul>
+								</div>
+								
+					</li>
+					
+					<li class="gnavi">
+						<a href="/index.kunsan?menuCd=DOM_000000106000000000">행정안내</a>
+						
+								<div class="ly_center topsub_img06">
+								<p><span>행정</span>안내</p>
+								<ul>
+								
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000106005000000">행정서비스</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106005005000">교직원행동강령</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106005009000">주차관리안내</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106005010000" target="_blank" title="새창열림">해양연구원<span class="h_win_icon"></span></a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000106001000000">정보공개</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106001006000">정보공개제도안내</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106001004000">공공데이터개방제도안내</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106001001000">계약내역현황</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106001002000">시설공사 지출내역현황</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106001005000">재정위원회</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000106003000000">정책정보</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106003001000">정책실명제안내</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106003002000">정책실명제등록부</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106003003000">개인정보 내부관리지침</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106003004000">청탁금지법안내</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106003005000">클린신고센터</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000106002000000">정보공시</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106002001000">대학정보공시</a></li>
+															
+													</ul>
+													
+										</li>
+										
+										<li class="mnavi">
+											<a href="/index.kunsan?menuCd=DOM_000000106006000000">학칙 및 규정</a>
+											
+													<ul>
+													
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106006004000">학칙 및 규정</a></li>
+															
+															<li class="snavi"><a href="/index.kunsan?menuCd=DOM_000000106006005000">지침 및 매뉴얼</a></li>
+															
+													</ul>
+													
+										</li>
+										
+								</ul>
+								</div>
+								
+					</li>
+					
+		</ul>
+
+
+
+
+	</div><!-- e:gnavibox -->
+	</div><!-- e:ly_center -->
+	</div>
+	<!-- e:gnavi -->
+
+
+</div>
+
+
+<button type="button" id="close-submenu-btn" style="position:absolute;top:-5000px;">서브메뉴닫기</button>
+
+
+<script type="text/javascript">//<![CDATA[
+$(function(){
+	//서브메뉴클릭
+	$('#gnavi .mnavi > a').on('click',function(){
+		//모바일메뉴에서만동작
+		if ($('#gnavi_btn').css('display') != 'none') {
+			var curr = $(this);
+			var box = curr.next();
+			if (typeof box == 'undefined' || box == null || box.length == 0) {
+				var href = curr.attr('href');
+				if (typeof href != 'undefined' && href != null) {
+					href = href.replace(' ','');
+					if (href != '' && href != '#') return; //링크이동
+				}
+			} else {
+				if (box.css('display') == 'none') {
+
+					var other_curr = $('#gnavi .mnavi > a').not(curr);
+					var other_box = $('#gnavi .mnavi > ul').not(box);
+					other_curr.removeClass('on');
+					other_box.css('display','none');
+
+					curr.addClass('on');
+					box.slideDown(100,function(){
+						$('#gnavibox').css('height',0 + curr.parent().parent().parent().height()); //주메뉴박스의높이로설정
+					});
+				} else {
+					box.slideUp(100,function(){
+						$('#gnavibox').css('height',0 + curr.parent().parent().parent().height()); //주메뉴박스의높이로설정
+					});
+				}
+			}
+			return false;
+		}
+	});
+	//메인메뉴클릭
+	$('#gnavi .gnavi > a').on('click',function(){
+		//모바일메뉴에서만동작
+		if ($('#gnavi_btn').css('display') != 'none') {
+			var curr = $(this);
+			var box = curr.next();
+			if (typeof box == 'undefined' || box == null || box.length == 0) {
+				var href = curr.attr('href');
+				if (typeof href != 'undefined' && href != null) {
+					href = href.replace(' ','');
+					if (href != '' && href != '#') return; //링크이동
+				}
+			} else {
+
+				var other_curr = $('#gnavi .gnavi > a').not(curr);
+				var other_box = $('#gnavi .gnavi > div').not(box);
+				other_curr.removeClass('on');
+				other_box.css('display','none');
+
+				other_curr.parent().removeClass('on');
+
+				$('#gnavi .mnavi > ul').css('display','none');
+
+				curr.addClass('on');
+				box.css({'height':'auto','display':'block'});
+				$('#gnavibox').css('height',0 + box.height()); //주메뉴박스의높이로설정
+			}
+			return false;
+		}
+	});
+	$('#gnavi .gnavi > a').on('mouseover focusin',function(e){
+		e.preventDefault();
+		//일반화면에서만동작
+		if ($('#gnavi_btn').css('display') == 'none') {
+			//================================================================= 변경부분
+			//전체메뉴 2차까지 풀다운용
+			//if ($('#gnavi').data('gnavi') != 'on') {
+			//	$('#gnavi').data('gnavi','on'); //깜박임방지용으로저장
+			//	$('#gnavibg, #gnavi .gnavi > div').slideDown(300,function(){$('#gnavi .gnavi > div').height($('#gnavibg').height())});
+			//}
+			//1차메뉴개별 하위모두 풀다운용
+			$('#gnavi .mnavi > ul').css({'display':'table'});
+			var box = $(this).next();
+			if ($('#gnavi').data('gnavi') != 'on') {
+				$('#gnavi').data('gnavi','on'); //깜박임방지용으로저장
+				box.css('display','block');
+				$('#gnavibg').css({'height':box.height(),'display':'block'});
+			} else {
+				box.css('display','block');
+				$('#gnavi .gnavi > div').not(box).css('display','none');
+				//$('#gnavibg').stop(true,false).animate({'height':box.height()},300,'easeOutExpo');
+				$('#gnavibg').css({'height':box.height()});
+			}
+			//=================================================================
+		}
+	});
+	//서브메뉴닫기
+	$('#gnavi').on('mouseleave',function(e){
+		e.preventDefault();
+		if ($('#gnavi_btn').css('display') == 'none') {
+			//================================================================= 변경부분
+			//전체메뉴 2차까지 풀다운용
+			//$('#gnavibg, #gnavi .gnavi > div').slideUp(200);
+			//1차메뉴개별 하위모두 풀다운용
+			$('#gnavi .gnavi > div').css('display','none');
+			//$('#gnavibg').stop(true,false).animate({'height':60},100,'easeOutExpo',function(){$(this).css('display','none');});
+			$('#gnavibg').hide();
+			//=================================================================
+			$('#gnavi').data('gnavi','off'); //깜박임방지용끄기
+		}
+	});
+
+
+	$('#close-submenu-btn').on('focusin', function(e){
+		//e.stopPropagation();
+		//e.preventDefault();
+		$('#gnavi').trigger('mouseleave');
+	});
+
+
+	//모바일메뉴열기닫기
+	$('.hx-com-menu').on('click',function(){
+		var left = $('#gnavi').width() * -1;
+		if ($('#gnavi').css('display') == 'none') {
+
+			$('#all_search').css('display','none'); //통합검색숨기기
+			$('.hx-com-dropdown').children('.h_down_icon').removeClass('on').end().next().css('display','none'); //드롭다운메뉴숨기기
+
+			//펼치기
+			$('#gnavi').css({'left':left,'display':'block'}).stop(true,false).animate({'left':0},300,'easeInCubic');
+			$('#gnavi .mnavi.on > ul').css('display','block'); //3차메뉴박스도펼쳐놓기
+			$('#gnavibox').css('height',$('#gnavi .gnavi.on > div').height());
+
+			//모바일메뉴에서만 활성화된 메뉴 활성화끄기
+			$('#gnavi .gnavi.on > a').addClass('on'); //1차메뉴
+			//$('#gnavi .mnavi.on > a').addClass('on'); //2차메뉴
+			//$('#gnavi .snavi.on > a').addClass('on'); //3차메뉴
+
+		} else {
+			$('#gnavi').stop(true,false).animate({'left':left},300,'easeInCubic',function(){$(this).css({'display':'none','left':0});});
+		}
+		return false;
+	});
+});
+$(window).resize(function(){
+	if ($('#gnavi_btn').css('display') == 'none') {
+		//일반화면에서메뉴
+
+		$('#gnavi_btn').data('mobile','off'); //모바일재진입알리려고
+
+		//일반화면메뉴처리
+		$('#gnavi').css('display','block'); //주메뉴보이기
+		$('#gnavi .gnavi > div').css('display','none'); //주메뉴서브박스숨기기
+		$('#gnavibox').css('height','auto'); //주메뉴서브박스높이초기화
+		//기존on클래스없어진항목복구
+		$('#gnavi .gnavi.cur').addClass('on');
+		$('#gnavi .mnavi.cur').addClass('on');
+		$('#gnavi .snavi.cur').addClass('on');
+
+		//모바일메뉴에서만 활성화된 메뉴 활성화끄기
+		$('#gnavi .gnavi > a').removeClass('on'); //1차메뉴
+		$('#gnavi .mnavi > a').removeClass('on'); //2차메뉴
+		$('#gnavi .snavi > a').removeClass('on'); //3차메뉴
+
+	} else {
+		//모바일화면에서메뉴
+
+		if ($('#gnavi_btn').data('mobile') == 'off') {
+			$('#gnavi_btn').data('mobile','on'); //모바일재진입알리려고
+
+			//일반화면메뉴숨기기
+			$('#gnavi').css('display','none');
+			//기존on클래스없어진항목복구
+			$('#gnavi .gnavi.cur > div').css('display','block'); //주메뉴서브박스보이기
+
+			//모바일메뉴에서만 활성화된 메뉴 활성화끄기
+			$('#gnavi .gnavi.cur > a').addClass('on'); //1차메뉴
+			//$('#gnavi .mnavi.cur > a').addClass('on'); //2차메뉴
+			//$('#gnavi .snavi.cur > a').addClass('on'); //3차메뉴
+
+			$('#gnavi .mnavi > ul').css('display','none'); //모바일에서만 열린 3차박스 숨기기
+		}
+	}
+
+});
+//]]></script>
+
+                                                                                  
+<!-- e:공통 전체메뉴 -->
+</div>
+
+
+
+
+<!-- s:콘테이너 -->
+<a href="#container_main" id="a_content" style="font-size:0;line-height:0;display:block;position:absolute;">본문시작</a>
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+<!-- s:container_main -->
+<div id="container_main">
+
+<div class="main_visual01">
+<!-- s:ly_center_mom -->
+<div class="ly_center_mom">
+
+
+<!-- s:main_guide01 -->
+<div class="main_guide01">
+
+
+<div class="main_text01">
+<span class="mt01">교육부 평가 최우수 대학</span>
+<span class="mt02">국립군산대학교</span>
+<span class="mt03">KUNSAN NATIONAL UNIVERSITY</span>
+</div>
+
+
+
+<div class="main_box_guide01">
+
+<div class="main_box01">
+<span>
+<a href="/iphak/index.kunsan" target="_blank" title="새창열림">입학</a>
+<a href="http://career.kunsan.ac.kr/index.do" target="_blank" title="새창열림">취업</a>
+</span>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="hx-news-slide" class="main_box02">
+<ul class="slider">
+
+
+
+
+
+
+			<li>
+			<a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80714" data-title="군산대, 식목일 맞아 대학 뒤편 야산 일대에 식목">
+			<img src="/upload_data/board_data/BBS_0000021/155444267070302.jpg" alt="군산대, 식목일 맞아 대학 뒤편 야산 일대에 식목 대표이미지" />
+			</a>
+			</li>
+			
+			<li>
+			<a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80713" data-title="군산대학교 직장예비군연대, 우수부대로 국방부장관 부대 표창 수상">
+			<img src="/upload_data/board_data/BBS_0000021/155444251027588.jpg" alt="군산대학교 직장예비군연대, 우수부대로 국방부장관 부대 표창 수상 대표이미지" />
+			</a>
+			</li>
+			
+			<li>
+			<a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80712" data-title="군산대 운영 군산시다문화가족지원센터, 이주외국인 취업기초소양교육..">
+			<img src="/upload_data/board_data/BBS_0000021/155444235445152.jpg" alt="군산대 운영 군산시다문화가족지원센터, 이주외국인 취업기초소양교육 운전면허필기과정 진행 대표이미지" />
+			</a>
+			</li>
+			
+			<li>
+			<a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80686" data-title="곽병선 총장, 미국 타코마커뮤니티칼리지 총장 등 접견">
+			<img src="/upload_data/board_data/BBS_0000021/155427331597229.jpg" alt="곽병선 총장, 미국 타코마커뮤니티칼리지 총장 등 접견 대표이미지" />
+			</a>
+			</li>
+			
+			<li>
+			<a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80575" data-title="외국인 유학생 안전사고 예방교육 실시">
+			<img src="/upload_data/board_data/BBS_0000021/155365036566213.jpg" alt="외국인 유학생 안전사고 예방교육 실시 대표이미지" />
+			</a>
+			</li>
+			
+			<li>
+			<a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80564" data-title="베트남 유학생에게 성금 전달식 개최">
+			<img src="/upload_data/board_data/BBS_0000021/155358787010086.jpg" alt="베트남 유학생에게 성금 전달식 개최 대표이미지" />
+			</a>
+			</li>
+			
+</ul>
+<div class="main_box02_01">
+	<ul class="mb02_btn">
+	<li><span class="page">1</span>/<span class="total">6</span></li>
+	<li><a class="prev" href="#PREV"><img src="/images/001kunsan/main/popup_btn01_01.png" alt="이전" /></a></li>
+	<li><a class="next" href="#NET"><img src="/images/001kunsan/main/popup_btn02_01.png" alt="다음" /></a></li>
+	<li><a class="stop" href="#STOP"><img src="/images/001kunsan/main/popup_btn03_01.png" alt="정지" /></a></li>
+	<li style="display:none;"><a class="play" href="#PLAY"><img src="/images/001kunsan/main/popup_btn05_01.png" alt="재생" /></a></li>
+	</ul>
+	<ul class="mb02_txt">
+	<li><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80714">군산대, 식목일 맞아 대학 뒤편 야산 일대에 식목</a></li>
+	</ul>
+</div>
+</div>
+<script type="text/javascript">//<![CDATA[
+$(function(){
+	var newsSliderPlay = true;
+	var newsSlider = $('#hx-news-slide .slider').bxSlider({
+		mode: 'vertical',
+		controls: false,
+		auto: true,
+		pager: false,
+		onSlidePrev: function($slider,oldIndex,newIndex){
+			printPageNumNTitle(newIndex);
+		},
+		onSlideNext: function($slider,oldIndex,newIndex){
+			printPageNumNTitle(newIndex);
+		},
+		pause: 5000 //default(4000)
+	});
+	function printPageNumNTitle(curIndex){
+		/* 현재페이지 설정 */
+		$('#hx-news-slide .page').text(curIndex+1);
+		var $a = $('#hx-news-slide .slider > li').eq(curIndex+1).children('a');
+		$('#hx-news-slide .mb02_txt a').text($a.data('title'));
+		$('#hx-news-slide .mb02_txt a').attr('href',$a.attr('href'));
+	}
+
+	$('#hx-news-slide .next').click(function(){
+		if (newsSliderPlay) {
+			newsSlider.stopAuto();
+			newsSlider.goToNextSlide();
+			newsSlider.startAuto();
+		} else {
+			newsSlider.goToNextSlide();
+		}
+		return false;
+	});
+	$('#hx-news-slide .prev').click(function(){
+		if (newsSliderPlay) {
+			newsSlider.stopAuto();
+			newsSlider.goToPrevSlide();
+			newsSlider.startAuto();
+
+
+		} else {
+			newsSlider.goToPrevSlide();
+		}
+		return false;
+	});
+	$('#hx-news-slide .stop').click(function(){
+		newsSliderPlay = false;
+		newsSlider.stopAuto();
+		$('#hx-news-slide .stop').parent().css('display','none');
+		$('#hx-news-slide .play').parent().css('display','inline-block');
+		return false;
+	});
+	$('#hx-news-slide .play').click(function(){
+		newsSliderPlay = true;
+		newsSlider.startAuto();
+		$('#hx-news-slide .play').parent().css('display','none');
+		$('#hx-news-slide .stop').parent().css('display','inline-block');
+		return false;
+	});
+});
+//]]></script>
+
+
+
+
+
+
+
+
+
+<div class="main_box03">
+<span><a href="/index.kunsan?menuCd=DOM_000000101001000000">학과소개</a></span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="hx-poptile-slide" class="main_box04">
+<ul class="slider">
+
+
+
+
+				<li>
+				<a href="http://fund.kunsan.ac.kr/bbs/board.php?bo_table=sponsor" target="_blank" title="새창열림">
+				<img src="/upload_data/popup/info/151927858986796.jpg" alt="후원의 집" />
+				</a>
+				</li>
+
+				
+				<li>
+				<a href="http://fund.kunsan.ac.kr/" target="_blank" title="새창열림">
+				<img src="/upload_data/popup/info/150390313007359.jpg" alt="대학발전지원재단" />
+				</a>
+				</li>
+
+				
+</ul>
+<ul class="mb02_btn">
+<li><span class="page">1</span>/<span class="total">2</span></li>
+<li><a class="prev" href="#PREV"><img src="/images/001kunsan/main/popup_btn01_01.png" alt="이전" /></a></li>
+<li><a class="next" href="#NEXT"><img src="/images/001kunsan/main/popup_btn02_01.png" alt="다음" /></a></li>
+<li><a class="stop" href="#STOP"><img src="/images/001kunsan/main/popup_btn03_01.png" alt="정지" /></a></li>
+<li style="display:none;"><a class="play" href="#PLAY"><img src="/images/001kunsan/main/popup_btn05_01.png" alt="재생" /></a></li>
+</ul>
+</div>
+<script type="text/javascript">//<![CDATA[
+$(function(){
+	var poptileSliderPlay = true;
+	var poptileSlider = $('#hx-poptile-slide .slider').bxSlider({
+		mode: 'horizontal',
+		controls: false,
+		auto: true,
+		pager: false,
+		onSlideBefore: function(slider){
+			var next = parseInt($('#hx-poptile-slide .page').text()) + 1;
+			if (next > parseInt($('#hx-poptile-slide .total').text())) next = 1;
+			$('#hx-poptile-slide .page').text(next);
+		},
+		pause: 4000
+	});
+	$('#hx-poptile-slide .next').click(function(){
+		if (poptileSliderPlay) {
+			poptileSlider.stopAuto();
+			poptileSlider.goToNextSlide();
+			poptileSlider.startAuto();
+		} else {
+			poptileSlider.goToNextSlide();
+		}
+		return false;
+	});
+	$('#hx-poptile-slide .prev').click(function(){
+		if (poptileSliderPlay) {
+			poptileSlider.stopAuto();
+			poptileSlider.goToPrevSlide();
+			poptileSlider.startAuto();
+		} else {
+			poptileSlider.goToPrevSlide();
+		}
+		return false;
+	});
+	$('#hx-poptile-slide .stop').click(function(){
+		poptileSliderPlay = false;
+		poptileSlider.stopAuto();
+		$('#hx-poptile-slide .stop').parent().css('display','none');
+		$('#hx-poptile-slide .play').parent().css('display','inline-block');
+		return false;
+	});
+	$('#hx-poptile-slide .play').click(function(){
+		poptileSliderPlay = true;
+		poptileSlider.startAuto();
+		$('#hx-poptile-slide .play').parent().css('display','none');
+		$('#hx-poptile-slide .stop').parent().css('display','inline-block');
+		return false;
+	});
+});
+//]]></script>
+
+
+
+
+
+
+
+
+
+
+<!--div class="main_box05">
+<span><a href="#PORTAL" target="_blank" title="새창열림" onclick="alert('준비중입니다.');return false;">KNU포털</a></span>
+</div-->
+
+<div class="main_box05">
+<span>
+<!-- <a href="https://tkis.kunsan.ac.kr/generate/KSNU/index.html" target="_blank" title="새창열림">통합정보시스템</a>
+<a href="https://kunsan.korus.ac.kr" target="_blank" title="새창열림">KORUS</a> -->
+<a href="https://portal.kunsan.ac.kr/index.do" target="_blank" title="새창열림">포털시스템</a>
+</span>
+</div>
+
+
+
+
+
+
+<div class="main_box06">
+<span><a href="/index.kunsan?menuCd=DOM_000000102001001000">캠퍼스VR</a></span>
+</div>
+
+
+
+
+
+<div class="main_box07">
+<span><a href="http://www.kunsan.ac.kr/o365RegGuide.jsp" target="_blank" title="새창열림">Office 365</a></span>
+</div>
+
+
+
+
+
+</div><!--e:main_box_guide01-->
+</div><!-- e:main_guide01 -->
+
+
+
+
+</div>
+<!-- e:ly_center_mom -->
+
+
+
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+$(function(){
+	$('.hx-main-quick-btn').click(function(){
+		var idx = $('.hx-main-quick-btn').index($(this));
+		$('.hx-main-quick-tab').css('display','none').eq(idx).fadeIn(200);
+		return false;
+	});
+	$('.hx-main-quick-tab >span>a').click(function(){
+		$(this).parent().parent().fadeOut(100);
+		return false;
+	});
+});
+//]]></script>
+
+<div id="main_quick_guide">
+
+	<div id="main_quick">
+		<ul>
+		<li class="mq_icon01"><a class="hx-main-quick-btn" href="#NONE">예비대학생</a></li>
+		<li class="mq_icon02"><a class="hx-main-quick-btn" href="#NONE">일반/기업</a></li>
+		<li class="mq_icon03"><a class="hx-main-quick-btn" href="#NONE">재학생</a></li>
+		<li class="mq_icon04"><a class="hx-main-quick-btn" href="#NONE">Foreigner</a></li>
+		</ul>
+	</div>
+
+	<div class="quick_box01">
+
+
+		<div class="quick_box02 qb01 hx-main-quick-tab" style="display:none;">
+				<span><a href="#CLOSE"><img src="/images/001kunsan/inc/close02.gif" alt="닫기" /></a></span>
+				<h4>예비대학생</h4>
+				<ul>
+					<li><a href="/iphak/index.kunsan" target="_blank" title="새창열림">입학등록</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000101001000000">학과안내</a></li>
+					<li><a href="/dormi/index.kunsan" target="_blank" title="새창열림">생활관</a></li>
+					<!--li><a href="/index.kunsan?menuCd=DOM_000000101002000000">대학원</a></li-->
+					<li><a href="/index.kunsan?menuCd=DOM_000000103005000000">장학제도</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000103006000000">학적정보</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000103007000000">학사지원</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000104001000000">학생활동</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000104002000000">복지시설</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000104003000000">보건시설</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000104004000000">금융기관</a></li>
+				</ul>
+		</div>
+
+
+		<div class="quick_box02 qb02 hx-main-quick-tab" style="display:none;">
+				<span><a href="#CLOSE"><img src="/images/001kunsan/inc/close02.gif" alt="닫기" /></a></span>
+				<h4>일반/기업</h4>
+				<ul>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102006000000">오시는길</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102001000000">학교홍보</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102009000000">학교상징</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102003000000">조직도</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102007000000">대학현황</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000106001001000">계약내역현황</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000106001002000">공사지출내역</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000105004000000">웹진</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000105005001000">사진</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000105005002000">영상</a></li>
+				</ul>
+		</div>
+
+
+		<div class="quick_box02 qb03 hx-main-quick-tab" style="display:none;">
+				<span><a href="#CLOSE"><img src="/images/001kunsan/inc/close02.gif" alt="닫기" /></a></span>
+				<h4>재학생</h4>
+				<ul>
+					<li><a href="https://tkis.kunsan.ac.kr" target="_blank" title="새창열림">통합정보</a></li>
+					<li><a href="http://e-class.kunsan.ac.kr/ilos/sso_new/index.jsp" target="_blank" title="새창열림">e-Class</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000103001000000">학사일정</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000104002002000">통학버스</a></li>
+					<li><a href="/board/list.kunsan?boardId=BBS_0000641&menuCd=DOM_000000104002007000&contentsSid=3778&cpath=">식단</a></li>
+					<li><a href="http://career.kunsan.ac.kr/index.do" target="_blank" title="새창열림">취업정보</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000103005000000">장학제도</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000103006000000">학적정보</a></li>
+					<li><a href="http://safetyedu.org/?UserAgencyNo=18&cpath=" target="_blank" title="새창열림">연구실안전센터</a></li>
+					<li><a href="http://www.testclinic.com/univ/ksa" target="_blank" title="새창열림">영어1 온라인</a></li>
+				</ul>
+		</div>
+
+
+		<div class="quick_box02 qb04 hx-main-quick-tab" style="display:none;">
+				<span><a href="#CLOSE"><img src="/images/001kunsan/inc/close02.gif" alt="닫기" /></a></span>
+				<h4>Foreigner</h4>
+				<ul>
+
+					<li><a href="http://www.kunsan.ac.kr/en/index.kunsan" target="_blank" title="새창열림">English</a></li>
+					<li class="chin_font"><a href="http://www.kunsan.ac.kr/ch/index.kunsan" target="_blank" title="새창열림">简体中文</a></li>
+
+				</ul>
+		</div>
+
+
+</div><!--e:quick_box01-->
+
+
+
+</div><!--e:main_quick_guide-->
+
+
+
+
+
+
+
+</div><!--e:main_visual01-->
+</div><!-- e:container_main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- s:ly_center_mom -->
+<div class="ly_center_mom">
+
+<div class="main_guide01">
+<!-- s:Notice-->
+    <div class="Notice">
+        <div id="article-tab01">
+          <h4 class="p01"><a href="#notice1" class="tab">공지사항</a></h4>
+          <div id="notice1">
+            <div class="notice_all">
+                <ul>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001001000&amp;boardId=BBS_0000008&amp;dataSid=80738" title="편입왕 &amp; 복학왕 프로그램 신청 안내">편입왕 &amp; 복학왕 프로그램 신청 안내</a><span>2019.04.08</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001001000&amp;boardId=BBS_0000008&amp;dataSid=80718" title="천원의 아침밥 메뉴 알림(2019. 4. 8. ~ 4. 19. )">천원의 아침밥 메뉴 알림(2019. 4. 8. ~ 4. 19. )</a><span>2019.04.05</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001001000&amp;boardId=BBS_0000008&amp;dataSid=80702" title="2019학년도 제13기 하계 학생해외봉사단 최종합격자 발표">2019학년도 제13기 하계 학생해외봉사단 최종합격자 발표</a><span>2019.04.04</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001001000&amp;boardId=BBS_0000008&amp;dataSid=80689" title="학생상담센터 인턴상담원 모집 안내">학생상담센터 인턴상담원 모집 안내</a><span>2019.04.03</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001001000&amp;boardId=BBS_0000008&amp;dataSid=80683" title="기존 연구관리시스템 가동 중단 안내">기존 연구관리시스템 가동 중단 안내</a><span>2019.04.02</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001001000&amp;boardId=BBS_0000008&amp;dataSid=80655" title="2019년 4월 원격저작권교육 안내">2019년 4월 원격저작권교육 안내</a><span>2019.04.01</span></li>
+                
+                </ul>
+            </div>
+
+            <span class="notice_more"><a href="/index.kunsan?menuCd=DOM_000000105001001000"><img src="/images/001kunsan/main/notice_more01.png" alt="공지사항 더보기"></a></span>
+          </div>
+
+          <h4 class="p02"><a href="#notice2" class="tab">학사/장학</a></h4>
+          <div id="notice2">
+            <div class="notice_all">
+                <ul>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001002000&amp;boardId=BBS_0000009&amp;dataSid=80642" title="하기 계절수업 희망교과목 수요조사 안내">하기 계절수업 희망교과목 수요조사 안내</a><span>2019.04.01</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001002000&amp;boardId=BBS_0000009&amp;dataSid=80563" title="2019학년도 대학생 청소년교육지원사업 관련 자료">2019학년도 대학생 청소년교육지원사업 관련 자료</a><span>2019.03.26</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001002000&amp;boardId=BBS_0000009&amp;dataSid=80562" title="2019학년도 1학기 국가근로학생 유의사항 안내">2019학년도 1학기 국가근로학생 유의사항 안내</a><span>2019.03.26</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001002000&amp;boardId=BBS_0000009&amp;dataSid=80484" title="2019년 건설근로자 「장학지원금」 신청 안내">2019년 건설근로자 「장학지원금」 신청 안내</a><span>2019.03.22</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001002000&amp;boardId=BBS_0000009&amp;dataSid=80412" title="2019학년도 1학기 마일리지 장학금 신청">2019학년도 1학기 마일리지 장학금 신청</a><span>2019.03.19</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001002000&amp;boardId=BBS_0000009&amp;dataSid=80374" title="2019. 1학기 외국어능력우수장학금 신청 안내">2019. 1학기 외국어능력우수장학금 신청 안내</a><span>2019.03.18</span></li>
+                
+                </ul>
+            </div>
+            <span class="notice_more"><a href="/index.kunsan?menuCd=DOM_000000105001002000"><img src="/images/001kunsan/main/notice_more01.png" alt="학사/장학 더보기"></a></span>
+          </div>
+
+
+
+          <h4 class="p03"><a href="#notice3" class="tab">모집공고</a></h4>
+          <div id="notice3">
+            <div class="notice_all">
+                <ul>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001003000&amp;boardId=BBS_0000010&amp;dataSid=80751" title="2019 고창 한국지역도서전 자원봉사자 모집">2019 고창 한국지역도서전 자원봉사자 모집</a><span>2019.04.08</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001003000&amp;boardId=BBS_0000010&amp;dataSid=80740" title="2019학년도 2학기 파견 교환학생 모집 안내">2019학년도 2학기 파견 교환학생 모집 안내</a><span>2019.04.08</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001003000&amp;boardId=BBS_0000010&amp;dataSid=80739" title="군산대학교 소비자생활협동조합 직원 채용 공고">군산대학교 소비자생활협동조합 직원 채용 공고</a><span>2019.04.08</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001003000&amp;boardId=BBS_0000010&amp;dataSid=80727" title="국제교류 서포터즈 어울림 1기 모집">국제교류 서포터즈 어울림 1기 모집</a><span>2019.04.06</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001003000&amp;boardId=BBS_0000010&amp;dataSid=80722" title="2019 산업체 연계 취업 멘토링 참여 신청 안내">2019 산업체 연계 취업 멘토링 참여 신청 안내</a><span>2019.04.05</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001003000&amp;boardId=BBS_0000010&amp;dataSid=80721" title="군산대 기간제 계약직원 서류전형 합격자 및 면접시험 일정 공고">군산대 기간제 계약직원 서류전형 합격자 및 면접시험 일정 공고</a><span>2019.04.05</span></li>
+                
+                </ul>
+            </div>
+            <span class="notice_more"><a href="/index.kunsan?menuCd=DOM_000000105001003000"><img src="/images/001kunsan/main/notice_more01.png" alt="모집공고 더보기"></a></span>
+          </div>
+
+
+
+		<h4 class="p04"><a href="#notice4" class="tab">행사/뉴스</a></h4>
+          <div id="notice4">
+            <div class="notice_all">
+                <ul>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001004000&amp;boardId=BBS_0000011&amp;dataSid=80696" title="4월 교육부 홍보 동영상">4월 교육부 홍보 동영상</a><span>2019.04.04</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001004000&amp;boardId=BBS_0000011&amp;dataSid=80670" title="[인터뷰]군산대 곽병선 총장 취임 1주년 맞아">[인터뷰]군산대 곽병선 총장 취임 1주년 맞아</a><span>2019.04.02</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001004000&amp;boardId=BBS_0000011&amp;dataSid=80581" title="「2019 도서관 전자정보박람회」 개최 안내">「2019 도서관 전자정보박람회」 개최 안내</a><span>2019.03.27</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001004000&amp;boardId=BBS_0000011&amp;dataSid=80145" title="[2019 박물관 이벤트_와봐야안다] 솟대에 소원달고, 선물받자!">[2019 박물관 이벤트_와봐야안다] 솟대에 소원달고, 선물받자!</a><span>2019.03.08</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001004000&amp;boardId=BBS_0000011&amp;dataSid=79488" title="군산대 약학대학 유치에 시민들 한 목소리">군산대 약학대학 유치에 시민들 한 목소리</a><span>2019.02.11</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001004000&amp;boardId=BBS_0000011&amp;dataSid=78494" title="1월 교육부 홍보 동영상">1월 교육부 홍보 동영상</a><span>2019.01.08</span></li>
+                
+                </ul>
+            </div>
+
+            <span class="notice_more"><a href="/index.kunsan?menuCd=DOM_000000105001004000"><img src="/images/001kunsan/main/notice_more01.png" alt="행사/뉴스 더보기"></a></span>
+          </div>
+
+
+
+          <h4 class="p05"><a href="#notice5" class="tab">교육/연구</a></h4>
+          <div id="notice5">
+            <div class="notice_all">
+                <ul>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001005000&amp;boardId=BBS_0000012&amp;dataSid=80530" title="동의대학교 지방자치연구소[공공정책연구] 제36집 1호 원고모집 안내">동의대학교 지방자치연구소[공공정책연구] 제36집 1호 원고모집 안내</a><span>2019.03.25</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001005000&amp;boardId=BBS_0000012&amp;dataSid=80185" title="홍역 Q&amp;A">홍역 Q&amp;A</a><span>2019.03.11</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001005000&amp;boardId=BBS_0000012&amp;dataSid=79609" title="「2015 개정 특수교육 교육과정 적용 실태」 연구수행을 위한 연구자 모집 공고">「2015 개정 특수교육 교육과정 적용 실태」 연구수행을 위한 연구자 모..</a><span>2019.02.14</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001005000&amp;boardId=BBS_0000012&amp;dataSid=79606" title="「특수교육 교과용도서 개발 체재 개선 방안」 연구 수행을 위한 연구자 모집 공고 알림">「특수교육 교과용도서 개발 체재 개선 방안」 연구 수행을 위한 연구자 모..</a><span>2019.02.14</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001005000&amp;boardId=BBS_0000012&amp;dataSid=79601" title="「시각장애대체교과서 단가산정 연구」 수행을 위한 연구자(기관) 모집 공고 알림">「시각장애대체교과서 단가산정 연구」 수행을 위한 연구자(기관) 모집 공고..</a><span>2019.02.14</span></li>
+                <li><a href="/board/view.kunsan?menuCd=DOM_000000105001005000&amp;boardId=BBS_0000012&amp;dataSid=79600" title="장애인 평생교육 중장기계획 연구자 모집 공고 계획 알림">장애인 평생교육 중장기계획 연구자 모집 공고 계획 알림</a><span>2019.02.14</span></li>
+                
+                </ul>
+            </div>
+
+            <span class="notice_more"><a href="/index.kunsan?menuCd=DOM_000000105001005000"><img src="/images/001kunsan/main/notice_more01.png" alt="교육/연구 더보기"></a></span>
+          </div>
+
+
+
+        </div>
+        <!--article-tab end-->
+
+
+      <script type="text/javascript">//<![CDATA[
+      NoticeTabMenu('article-tab01');
+      //]]></script>
+      </div>
+      <!-- e:Notice-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="popup_zone" class="hx-popinfo-slide">
+<ul class="pupup_btn" style="z-index:99;">
+<li>인포존</li>
+<li><span class="page">1</span>/<span class="total">2</span></li>
+<li><a class="prev" href="#PREV"><img src="/images/001kunsan/main/popup_btn01_01.png" alt="이전" /></a></li>
+<li><a class="next" href="#NEXT"><img src="/images/001kunsan/main/popup_btn02_01.png" alt="다음" /></a></li>
+<li><a class="stop" href="#STOP"><img src="/images/001kunsan/main/popup_btn03_01.png" alt="정지" /></a></li>
+<li style="display:none;"><a class="play" href="#PLAY"><img src="/images/001kunsan/main/popup_btn05_01.png" alt="재생" /></a></li>
+</ul>
+<ul class="popup_img slider">
+
+				<li>
+				<a href="http://www.kunsan.ac.kr/board/view.kunsan?boardId=BBS_0000008&menuCd=DOM_000000105001001000&command=update&orderBy=REGISTER_DATE DESC&dataSid=80089&startPage=1&commentPage=1&keyword=" target="_blank" title="새창열림">
+				<img src="/upload_data/popup/info/155235805206788.gif" alt="천원의 아침밥 사업 안내 기간:2019.3.11(월)~6.18(화) 시간:오전 8시 ~ 10시 장소:제1학생회관" />
+				</a>
+				</li>
+				
+				<li>
+					
+						<img class="mapare" src="/upload_data/popup/info/153750963795918.gif" alt="학내 WiFi(eduroam) 접속 설정 변경 안내" usemap="#ed20180921"/>
+					
+					<map name="ed20180921" id="ed20180921">
+						<area shape="rect" coords="35,99,250,145" href="http://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004000000" alt="Windows 필수변경" />
+	<area shape="rect" coords="34,149,249,195" href="http://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004002000" alt="Android 필수변경" />
+	<area shape="rect" coords="34,198,251,243" href="http://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004003000" alt="iOS" /></map>
+					</body>
+
+                </li>
+			
+</ul>
+</div>
+
+<script type="text/javascript">//<![CDATA[
+$(function(){
+
+	//$('#popup_zone .popup_img img[usemap]').rwdImageMaps();
+	var popinfoSlider = $('.hx-popinfo-slide .slider').bxSlider({
+		mode: 'fade',
+		controls: false,
+		auto: true,
+		pager: false,
+		onSlideAfter: function(){
+			$('.hx-popinfo-slide .page').text(popinfoSlider.getCurrentSlide()+1);
+		},
+		onSlidePrev: function(){
+			popinfoSlider.find("li[aria-hidden='false']").find("img[usemap]").rwdImageMaps();	// 20180302 추가
+		},
+		onSlideNext: function($slider,oldIndex,newIndex){
+			popinfoSlider.find("li[aria-hidden='false']").find("img[usemap]").rwdImageMaps();	// 20180302 추가
+		},
+		pause: 4000
+	});
+	$('.hx-popinfo-slide .next').click(function(){
+		popinfoSlider.goToNextSlide();
+		return false;
+	});
+	$('.hx-popinfo-slide .prev').click(function(){
+		popinfoSlider.goToPrevSlide();
+		return false;
+	});
+	$('.hx-popinfo-slide .stop').click(function(){
+		popinfoSlider.stopAuto();
+		$('.hx-popinfo-slide .stop').parent().css('display','none');
+		$('.hx-popinfo-slide .play').parent().css('display','block');
+		return false;
+	});
+	$('.hx-popinfo-slide .play').click(function(){
+		popinfoSlider.startAuto();
+		$('.hx-popinfo-slide .play').parent().css('display','none');
+		$('.hx-popinfo-slide .stop').parent().css('display','block');
+		return false;
+	});
+
+	
+});
+//]]></script>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- e:main_guide01 -->
+
+</div>
+<!-- e:ly_center_mom -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main_guide02">
+<div class="main_guide03">
+<!-- s:ly_center_mom -->
+<div class="ly_center_mom">
+
+
+<div class="main_news">
+<h3>
+<span>새만금과 함께 세계로 나아가는 지역 제일의 특성화대학!</span>
+<strong>군산대학교 뉴스</strong>
+</h3>
+
+
+<div class="main_news_box">
+
+
+
+			<ul>
+			<li class="news_img"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80714"><img src="/upload_data/board_data/BBS_0000021/155444267070302.jpg" alt="군산대, 식목일 맞아 대학 뒤편 야산 일대에 식목" /></a></li>
+			<li class="news_title"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80714">군산대, 식목일 맞아 대학 뒤편 야산 일대에 ..</a></li>
+			<li class="news_txt">-산딸나무, 목련, 야광나무 등 수목원 산책로 조성
+
+&nbsp;
+
+군산대학교는 5일 제 74회 식목일을 맞아 교내 음악관 뒤...</li>
+			<li>
+			<span class="main_date">2019-04-05</span>
+			
+					<span class="main_sns">
+					<a href="#SHAREFACEBOOK" class="hx-com-share-facebook" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80714" data-title="군산대, 식목일 맞아 대학 뒤편 야산 일대에 식목"><img src="/images/001kunsan/main/main_facebook01.png" alt="페이스북에공유하기" /></a>
+					<a href="#SHARETWITTER" class="hx-com-share-twitter" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80714" data-title="군산대, 식목일 맞아 대학 뒤편 야산 일대에 식목"><img src="/images/001kunsan/main/main_twitter01.png" alt="트위터에공유하기" /></a>
+					</span>
+					
+			</li>
+			</ul>
+			
+
+			<ul>
+			<li class="news_img"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80713"><img src="/upload_data/board_data/BBS_0000021/155444251027588.jpg" alt="군산대학교 직장예비군연대, 우수부대로 국방부장관 부대 표창 수상" /></a></li>
+			<li class="news_title"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80713">군산대학교 직장예비군연대, 우수부대로 국방부장..</a></li>
+			<li class="news_txt">군산대학교 직장예비군연대(연대장 장동문)가 5일 향토예비군의 날을 맞아 국방부장관 부대 표창을 수상하였다.
+
+&nbsp;
+
+이...</li>
+			<li>
+			<span class="main_date">2019-04-05</span>
+			
+					<span class="main_sns">
+					<a href="#SHAREFACEBOOK" class="hx-com-share-facebook" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80713" data-title="군산대학교 직장예비군연대, 우수부대로 국방부장관 부대 표창 수상"><img src="/images/001kunsan/main/main_facebook01.png" alt="페이스북에공유하기" /></a>
+					<a href="#SHARETWITTER" class="hx-com-share-twitter" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80713" data-title="군산대학교 직장예비군연대, 우수부대로 국방부장관 부대 표창 수상"><img src="/images/001kunsan/main/main_twitter01.png" alt="트위터에공유하기" /></a>
+					</span>
+					
+			</li>
+			</ul>
+			
+
+			<ul>
+			<li class="news_img"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80712"><img src="/upload_data/board_data/BBS_0000021/155444235445152.jpg" alt="군산대 운영 군산시다문화가족지원센터, 이주외국인 취업기초소양교육 운전면허필기과정 진행" /></a></li>
+			<li class="news_title"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80712">군산대 운영 군산시다문화가족지원센터, 이주외국..</a></li>
+			<li class="news_txt">군산대학교가 위탁받아 운영하고 있는 군산시다문화가족지원센터는 지난 3일부터 오는 5월 8일까지 이주외국인을 대상으로 운전면허필...</li>
+			<li>
+			<span class="main_date">2019-04-05</span>
+			
+					<span class="main_sns">
+					<a href="#SHAREFACEBOOK" class="hx-com-share-facebook" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80712" data-title="군산대 운영 군산시다문화가족지원센터, 이주외국인 취업기초소양교육 운전면허필기과정 진행"><img src="/images/001kunsan/main/main_facebook01.png" alt="페이스북에공유하기" /></a>
+					<a href="#SHARETWITTER" class="hx-com-share-twitter" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80712" data-title="군산대 운영 군산시다문화가족지원센터, 이주외국인 취업기초소양교육 운전면허필기과정 진행"><img src="/images/001kunsan/main/main_twitter01.png" alt="트위터에공유하기" /></a>
+					</span>
+					
+			</li>
+			</ul>
+			
+
+			<ul>
+			<li class="news_img"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80686"><img src="/upload_data/board_data/BBS_0000021/155427331597229.jpg" alt="곽병선 총장, 미국 타코마커뮤니티칼리지 총장 등 접견" /></a></li>
+			<li class="news_title"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80686">곽병선 총장, 미국 타코마커뮤니티칼리지 총장 ..</a></li>
+			<li class="news_txt">곽병선 총장은 2일 대학 본부에서 군산대학교의 자매대학인 미국 타코마커뮤니티칼리지(Tacoma Community College...</li>
+			<li>
+			<span class="main_date">2019-04-03</span>
+			
+					<span class="main_sns">
+					<a href="#SHAREFACEBOOK" class="hx-com-share-facebook" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80686" data-title="곽병선 총장, 미국 타코마커뮤니티칼리지 총장 등 접견"><img src="/images/001kunsan/main/main_facebook01.png" alt="페이스북에공유하기" /></a>
+					<a href="#SHARETWITTER" class="hx-com-share-twitter" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80686" data-title="곽병선 총장, 미국 타코마커뮤니티칼리지 총장 등 접견"><img src="/images/001kunsan/main/main_twitter01.png" alt="트위터에공유하기" /></a>
+					</span>
+					
+			</li>
+			</ul>
+			
+
+			<ul>
+			<li class="news_img"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80575"><img src="/upload_data/board_data/BBS_0000021/155365036566213.jpg" alt="외국인 유학생 안전사고 예방교육 실시" /></a></li>
+			<li class="news_title"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80575">외국인 유학생 안전사고 예방교육 실시</a></li>
+			<li class="news_txt">군산대학교 국제교류교육원은 26일 황룡문화홀에서 한국어연수과정 신입생 등 130여명을 대상으로 외국인 유학생 안전예방교육을 실...</li>
+			<li>
+			<span class="main_date">2019-03-27</span>
+			
+					<span class="main_sns">
+					<a href="#SHAREFACEBOOK" class="hx-com-share-facebook" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80575" data-title="외국인 유학생 안전사고 예방교육 실시"><img src="/images/001kunsan/main/main_facebook01.png" alt="페이스북에공유하기" /></a>
+					<a href="#SHARETWITTER" class="hx-com-share-twitter" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80575" data-title="외국인 유학생 안전사고 예방교육 실시"><img src="/images/001kunsan/main/main_twitter01.png" alt="트위터에공유하기" /></a>
+					</span>
+					
+			</li>
+			</ul>
+			
+
+			<ul>
+			<li class="news_img"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80564"><img src="/upload_data/board_data/BBS_0000021/155358787010086.jpg" alt="베트남 유학생에게 성금 전달식 개최" /></a></li>
+			<li class="news_title"><a href="/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80564">베트남 유학생에게 성금 전달식 개최</a></li>
+			<li class="news_txt">-하림교회 고일곤 목사 등 십시일반
+
+&nbsp;
+
+&nbsp;
+
+군산대학교는 26일 대학본부 총장접견실에서 &ldquo;베트...</li>
+			<li>
+			<span class="main_date">2019-03-26</span>
+			
+					<span class="main_sns">
+					<a href="#SHAREFACEBOOK" class="hx-com-share-facebook" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80564" data-title="베트남 유학생에게 성금 전달식 개최"><img src="/images/001kunsan/main/main_facebook01.png" alt="페이스북에공유하기" /></a>
+					<a href="#SHARETWITTER" class="hx-com-share-twitter" title="새창열림" data-url="http://www.kunsan.ac.kr/board/view.kunsan?menuCd=DOM_000000105004001000&amp;boardId=BBS_0000021&amp;dataSid=80564" data-title="베트남 유학생에게 성금 전달식 개최"><img src="/images/001kunsan/main/main_twitter01.png" alt="트위터에공유하기" /></a>
+					</span>
+					
+			</li>
+			</ul>
+			
+<script type="text/javascript">//<![CDATA[
+$(function(){
+	//페이스북에공유하기
+	$('.hx-com-share-facebook').click(function(){
+		var tit = $(this).data('title'); if (!tit) tit = document.title;
+		var url = $(this).data('url'); if (!url) url = location.href;
+		url = 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url);
+		window.open(url, 'share_facebook', 'width=600,height=600,directories=0,location=0,menubar=0,titlebar=0,toolbar=0,status=0,resizable=1,scrollbars=1').focus();
+		return false;
+	});
+	//트위터에공유하기
+
+
+	$('.hx-com-share-twitter').click(function(){
+		var tit = $(this).data('title'); if (!tit) tit = document.title;
+		var url = $(this).data('url'); if (!url) url = location.href;
+		url = 'https://twitter.com/intent/tweet?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(tit);
+		window.open(url, 'share_twitter', 'width=600,height=600,directories=0,location=0,menubar=0,titlebar=0,toolbar=0,status=0,resizable=1,scrollbars=1').focus();
+		return false;
+	});
+});
+//]]></script>
+</div>
+<div class="news_more"><a href="/index.kunsan?menuCd=DOM_000000105004001000">더보기</a></div>
+
+
+</div>
+
+<!--e:main_news-->
+
+
+
+
+
+
+
+</div>
+<!-- e:ly_center_mom -->
+</div>
+<!-- e:main_guide03 -->
+</div>
+<!-- e:main_guide02 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- s:ly_center_mom -->
+<div class="ly_center_mom">
+<div class="main_guide04">
+
+<div class="main_service">
+<h3>
+<span>지역을 기반으로 세계로 나아가는 당당한 실무형 미래 인재양성 대학!</span>
+<strong>군산대학교 <strong class="fc02">주요서비스</strong></strong>
+</h3>
+
+
+
+
+
+
+
+<div class="main_service_box hx-bansvc-slide">
+<ul class="slider">
+
+				<li>
+				<a href="http://www.kunsan.ac.kr/dormi" target="_blank" title="새창열림">
+				<img src="/upload_data/popup/banner/149871917680028.png" alt="학생생활관" />
+				</a>
+				<strong>학생생활관</strong>
+				<p>군산대학교 학생생활관을 자세히 보실 수 있습니다.</p>
+				</li>
+				
+				<li>
+				<a href="http://library.kunsan.ac.kr/" target="_blank" title="새창열림">
+				<img src="/upload_data/popup/banner/149871922387649.png" alt="도서관" />
+				</a>
+				<strong>도서관</strong>
+				<p>군산대학교 도서관에 관한 정보를 확인할 수 있습니다.</p>
+				</li>
+				
+				<li>
+				<a href="http://www.kunsan.ac.kr/comcenter/index.kunsan" target="_blank" title="새창열림">
+				<img src="/upload_data/popup/banner/152575303104284.jpg" alt="정보전산원" />
+				</a>
+				<strong>정보전산원</strong>
+				<p>군산대학교 정보전산원을 자세히 보실 수 있습니다.</p>
+				</li>
+				
+				<li>
+				<a href="/index.kunsan?menuCd=DOM_000000103001000000">
+				<img src="/upload_data/popup/banner/149871929362650.png" alt="학사일정" />
+				</a>
+				<strong>학사일정</strong>
+				<p>군산대학교 학사일정을 상세히 보실수 있습니다.</p>
+				</li>
+				
+				<li>
+				<a href="http://kunsan.webminwon.kr/" target="_blank" title="새창열림">
+				<img src="/upload_data/popup/banner/149871935470218.png" alt="인터넷증명" />
+				</a>
+				<strong>인터넷증명</strong>
+				<p>군산대학교에서는 인터넷을 통해 쉽게 관련서류를 제공합니다.</p>
+				</li>
+				
+				<li>
+				<a href="https://career.kunsan.ac.kr/user/Re/ReJo020L.do?CURRENT_MENU_CODE=MENU2004&TOP_MENU_CODE=MENU2001" target="_blank" title="새창열림">
+				<img src="/upload_data/popup/banner/149871944062986.png" alt="채용정보" />
+				</a>
+				<strong>채용정보</strong>
+				<p>군산대학교 채용정보를 자세히 보실수 있는 곳입니다.</p>
+				</li>
+				
+				<li>
+				<a href="/index.kunsan?menuCd=DOM_000000104002002000">
+				<img src="/upload_data/popup/banner/149871951452367.png" alt="통학버스" />
+				</a>
+				<strong>통학버스</strong>
+				<p>군산대학교에서 운행중인 통학버스 시간를 알수 있습니다.</p>
+				</li>
+				
+</ul>
+<div class="service_btn">
+<span class="sb_left"><a class="prev" href="#PREV"><img src="/images/001kunsan/main/service_btn01.png" alt="이전" /></a></span>
+<span class="sb_right"><a class="next" href="#NEXT"><img src="/images/001kunsan/main/service_btn02.png" alt="다음" /></a></span>
+</div>
+</div>
+<script type="text/javascript">//<![CDATA[
+$(function(){
+	var bansvcSliding = true;
+	$('.hx-bansvc-slide .prev').click(function(){
+		if (bansvcSliding) {
+			bansvcSliding = false;
+			var $ul = $('.hx-bansvc-slide .slider');
+			var $li = $('.hx-bansvc-slide .slider li');
+			var max = $li.length - 1;
+			if (max > 2) {
+				var w1 = $ul.width();
+				var w2 = $li.eq(0).width();
+				$ul.css({'position':'absolute','width':w1+'px','left':'-'+w2+'px'}).prepend('<li>'+$li.eq(max).html()+'</li>');
+				$ul.stop(false,true).animate({'left':0},400,'swing',function(){
+					$('.hx-bansvc-slide .slider').css({'position':'static','left':'0px','width':'auto'});
+					$('.hx-bansvc-slide .slider li').eq(max+1).remove();
+					bansvcSliding = true;
+				});
+			}
+		}
+		return false;
+	});
+	$('.hx-bansvc-slide .next').click(function(){
+		if (bansvcSliding) {
+			bansvcSliding = false;
+			var $ul = $('.hx-bansvc-slide .slider');
+			var $li = $('.hx-bansvc-slide .slider li');
+			var wid = $('.hx-bansvc-slide .slider li').css('width');
+			var max = $li.length - 1;
+			if (max > 2) {
+				var w1 = $ul.width();
+				var w2 = $li.eq(0).width();
+				$ul.css({'position':'absolute','width':w1+'px'}).append('<li>'+$li.eq(0).html()+'</li>');
+				$ul.stop(false,true).animate({'left':'-'+w2+'px'},400,'swing',function(){
+					$('.hx-bansvc-slide .slider').css({'position':'static','left':'0px','width':'auto'});
+					$('.hx-bansvc-slide .slider li').eq(0).remove();
+					bansvcSliding = true;
+				});
+			}
+		}
+		return false;
+	});
+});
+//]]></script>
+
+
+
+</div>
+
+<!--e:main_service-->
+
+
+
+
+
+
+
+
+</div>
+<!-- e:main_guide04 -->
+
+</div>
+<!-- e:ly_center_mom -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main_guide05">
+<!-- s:ly_center_mom -->
+<div class="ly_center_mom">
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+$(function(){
+	$('.hx-main-link-btn').click(function(){
+		var idx = $('.hx-main-link-btn').index($(this));
+		$('.hx-main-link-btn').removeClass('on').eq(idx).addClass('on');
+		$('.hx-main-link-tab').css('display','none').eq(idx).css('display','block');
+		return false;
+	});
+	$('.hx-main-link-list form').submit(function(){
+		var $f = $(this);
+		var url = $f.find('select option:selected').val();
+		if (url && url.indexOf('?') > 0) {
+			window.open(url);
+			return false;
+		} else if (url && url.indexOf('#') != 0) {
+			$f.attr('action',url);
+			return true;
+		}
+		$f.attr('action','#NONE');
+		return false;
+	});
+	$('.hx-main-link-list').each(function(){
+		var $div = $(this);
+		var $sel = $div.find('form select');
+		$div.find('>ul>li').each(function(){
+			var $li = $(this);
+			var $a = $li.find('>a');
+			if ($a.length > 0) {
+				var url = $a.attr('href');
+				$sel.append('<option value="'+url+'">'+$a.text()+'</option>');
+				$li.find('>ul>li').each(function(){
+					var $a2 = $(this).find('>a');
+					if ($a2.length > 0) {
+						$sel.append('<option value="'+$a2.attr('href')+'">&nbsp;&nbsp; - '+$a2.text()+'</option>');
+					} else {
+						$sel.append('<option value="" style="color:#555;">&nbsp;&nbsp; - '+$(this).text()+'</option>');
+					}
+				});
+			} else {
+				$sel.append('<option value="" style="color:#555;">'+$li.find('>span').text()+'</option>');
+				$li.find('>ul>li').each(function(){
+					var $a2 = $(this).find('>a');
+					if ($a2.length > 0) {
+						$sel.append('<option value="'+$a2.attr('href')+'">&nbsp;&nbsp; - '+$a2.text()+'</option>');
+					} else {
+						$sel.append('<option value="" style="color:#555;">&nbsp;&nbsp; - '+$(this).text()+'</option>');
+					}
+				});
+			}
+		});
+	});
+});
+//]]></script>
+
+
+
+
+<div class="main_link">
+
+<div class="ml_tab01">
+	<span><a class="hx-main-link-btn on" href="#NONE">대학·대학원</a></span>
+	<span><a class="hx-main-link-btn" href="#NONE">기관·사업단·연구</a></span>
+</div>
+
+<div class="hx-main-link-tab" style="display:block;">
+	<!--<h3>대학·대학원</h3>-->
+
+	<div class="main_link_box01">
+	<div class="main_link_box02">
+
+
+			<div class="ml_box01 mlbg01 hx-main-link-list">
+				<h4><a href="http://www.kunsan.ac.kr/human/index.kunsan" target="_blank" title="새창열림">인문대학</a></h4>
+
+				<form action="#NONE" method="get" target="_blank">
+					<select title="인문대학 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="/korean/index.kunsan" target="_blank" title="새창열림">국어국문학과</a></li>
+					<li><a href="/knuenglish/index.kunsan" target="_blank" title="새창열림">영어영문학과</a></li>
+					<li><a href="/mediaculture/index.kunsan" target="_blank" title="새창열림">미디어문화학과</a></li>
+					<li><span>동아시아학부</span>
+						<ul>
+						<li><a href="/japanese/index.kunsan" target="_blank" title="새창열림">일어일문학전공</a></li>
+						<li><a href="/chinese/index.kunsan" target="_blank" title="새창열림">중어중문학전공</a></li>
+						</ul>
+                    			</li>
+					<li><span>역사철학부</span>
+						<ul>
+						<li><a href="/history/index.kunsan" target="_blank" title="새창열림">역사전공</a></li>
+						<li><a href="/philosophy/index.kunsan" target="_blank" title="새창열림">철학전공</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="ml_box02 mlbg02 hx-main-link-list">
+				<h4><a href="/index.kunsan?menuCd=DOM_000000101001010000">예술대학</a></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="예술대학 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="/finearts/index.kunsan" target="_blank" title="새창열림">미술학과</a></li>
+					<li><a href="/kssandi/index.kunsan" target="_blank" title="새창열림">산업디자인학과</a></li>
+					<!--li><a href="/ceramic/index.kunsan" target="_blank" title="새창열림">세라믹콘텐츠디자인학과</a></li-->
+					<li><a href="/music/index.kunsan" target="_blank" title="새창열림">음악과</a></li>
+				</ul>
+			</div>
+
+
+			<div class="ml_box03 mlbg01 hx-main-link-list">
+				<h4><a href="/index.kunsan?menuCd=DOM_000000101001011000">사회과학대학</a></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="사회과학대학 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><span>행정경제학부</span>
+						<ul>
+						<li><a href="/knupa/index.kunsan" target="_blank" title="새창열림">행정학 전공</a></li>
+						<li><a href="/economics/index.kunsan" target="_blank" title="새창열림">경제학 전공</a></li>
+						</ul>
+					</li>
+					<li><a href="/nkssw/index.kunsan" target="_blank" title="새창열림">사회복지학과</a></li>
+					<li><a href="/trade/index.kunsan" target="_blank" title="새창열림">무역학과</a></li>
+					<li><a href="/business/index.kunsan" target="_blank" title="새창열림">경영학과</a></li>
+					<li><a href="/accounting/index.kunsan" target="_blank" title="새창열림">회계학과</a></li>
+					<li><a href="/kslaw/index.kunsan" target="_blank" title="새창열림">법학과</a></li>
+					<li><a href="/logistics/index.kunsan" target="_blank" title="새창열림">물류학과</a></li>
+					<li><a href="/teaching/index.kunsan" target="_blank" title="새창열림">교직과</a></li>
+				</ul>
+							</div>
+
+
+			<div class="ml_box04 mlbg02 hx-main-link-list">
+				<h4><a href="/index.kunsan?menuCd=DOM_000000101001008000">자연과학대학</a></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="자연과학대학 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="/physics/index.kunsan" target="_blank" title="새창열림">물리학과</a></li>
+					<li><a href="/chem/index.kunsan" target="_blank" title="새창열림">화학과</a></li>
+					<li><a href="/biology/index.kunsan" target="_blank" title="새창열림">생물학과</a></li>
+					<li><a href="/math/index.kunsan" target="_blank" title="새창열림">수학과</a></li>
+					<li><a href="/scs/index.kunsan" target="_blank" title="새창열림">통계컴퓨터과학과</a></li>
+					<li><a href="/child_family/index.kunsan" target="_blank" title="새창열림">아동가족학과</a></li>
+					<li><a href="/clothing/index.kunsan" target="_blank" title="새창열림">의류학과</a></li>
+					
+					<li><a href="/ksports/index.kunsan" target="_blank" title="새창열림">체육학과</a></li>	  				<li><a href="/nursing/index.kunsan" target="_blank" title="새창열림">간호학과</a></li>
+
+				</ul>
+							</div>
+
+
+			<div class="ml_box05 mlbg02 hx-main-link-list">
+				<h4><a href="/index.kunsan?menuCd=DOM_000000101001012000">공과대학</a></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="공과대학 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="/electronic/index.kunsan" target="_blank" title="새창열림">전자공학과</a></li>
+					<li><a href="/electrical/index.kunsan" target="_blank" title="새창열림">전기공학과</a></li>
+					<li><a href="/gscivil/index.kunsan" target="_blank" title="새창열림">토목공학과</a></li>
+					<li><a href="/environment/index.kunsan" target="_blank" title="새창열림">환경공학과</a></li>
+					<li><a href="/webkunsan/index.kunsan" target="_blank" title="새창열림">신소재공학과</a></li>
+					<li><a href="/nanochemeng/index.kunsan" target="_blank" title="새창열림">나노화학공학과</a></li>
+					<li><span>컴퓨터정보통신공학부</span>
+						<ul>
+						<li><a href="http://cie.kunsan.ac.kr/" target="_blank" title="새창열림">컴퓨터정보공학전공</a></li>
+						<li><a href="/bestict/index.kunsan" target="_blank" title="새창열림">정보통신공학전공</a></li>
+						</ul>
+					</li>
+					<li><a href="/naoe/index.kunsan" target="_blank" title="새창열림">조선해양공학과</a></li>
+					<li><span>IT정보제어공학부</span>
+						<ul>
+						<li><a href="/car/index.kunsan" target="_blank" title="새창열림">정보제어공학전공</a></li>
+						<li><a href="/radio/index.kunsan" target="_blank" title="새창열림">IT융합통신공학전공</a></li>
+						</ul>
+					</li>
+
+				</ul>
+						</div>
+
+
+			<div class="ml_box06 mlbg01 hx-main-link-list">
+				<h4><a href="/index.kunsan?menuCd=DOM_000000101001013000">해양과학대학</a></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="해양과학대학 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><span>해양산업운송과학기술학부</span>
+						<ul>
+						<li><a href="/marine/index.kunsan" target="_blank" title="새창열림">해양생산시스템전공</a></li>
+						<li><a href="/marineengineering/index.kunsan" target="_blank" title="새창열림">마린엔지니어링전공</a></li>
+						</ul>
+					</li>
+					<li><span>해양생명응용과학부</span>
+						<ul>
+						<li><a href="/aquaculture/index.kunsan" target="_blank" title="새창열림">해양생명과학전공</a></li>
+						<li><a href="/mbiotec/index.kunsan" target="_blank" title="새창열림">해양생물공학전공</a></li>
+						<li><a href="/dalm/index.kunsan" target="_blank" title="새창열림">해양생명의학전공</a></li>
+						</ul>
+					</li>
+					<li><span>식품생명과학부</span>
+						<ul>
+						<li><a href="/foodscience/index.kunsan" target="_blank" title="새창열림">식품생명공학전공</a></li>
+						<li><a href="/foodnutr/index.kunsan" target="_blank" title="새창열림">식품영양학전공</a></li>						
+						</ul>
+					</li>
+					<li><a href="/mpolice/index.kunsan" target="_blank" title="새창열림">해양경찰학과</a></li>
+				</ul>
+			</div>
+
+
+			<div class="ml_box07 mlbg02 hx-main-link-list">
+				<h4><a href="/index.kunsan?menuCd=DOM_000000101001014000">산학융합공과대학</a></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="산학융합공과대학 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="/kunsanwheel/index.kunsan" target="_blank" title="새창열림">기계융합시스템공학부</a>
+					    <ul>
+					    <li><span>미래형자동차공학전공</span></li>
+					    <li><span>기계에너지공학전공</span></li>
+					    <li><span>기계공학전공</span></li>
+					    </ul>
+					</li>
+					<li><a href="/architecturecoastalengineering/index.kunsan" target="_blank" title="새창열림">건축해양건설융합공학부</a></li>
+					<li><a href="/interiorhousing/index.kunsan" target="_blank" title="새창열림">공간디자인융합기술학과</a></li>
+					<li><a href="/startup/index.kunsan" target="_blank" title="새창열림">융합기술창업학과</a></li>
+					<li><a href="/sw/index.kunsan" target="_blank" title="새창열림">소프트웨어융합공학과</a></li>
+				</ul>
+			</div>
+
+
+			<div class="ml_box08 mlbg01 hx-main-link-list">
+				<h4><a href="/index.kunsan?menuCd=DOM_000000101002000000">대학원</a></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="대학원 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+				<li><a href="/gradu_kunsan/index.kunsan" target="_blank" title="새창열림">일반대학원</a></li>
+				<li><a href="/gradu_industry/index.kunsan" target="_blank" title="새창열림">산업대학원</a></li>
+				<li><a href="/gradu_manage/index.kunsan" target="_blank" title="새창열림">경영행정대학원</a></li>
+				<li><a href="/gradu_edu/index.kunsan" target="_blank" title="새창열림">교육대학원</a></li>
+				</ul>
+			</div>
+
+
+			<!--<div class="ml_box09 mlbg01 hx-main-link-list">
+				<h4><a href="http://jayul.kr/" target="_blank" title="새창열림">자율전공학과</a></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="자율전공학과 자세히보기"><option value="http://jayul.kr/">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<span><a href="http://jayul.kr/" target="_blank" title="새창열림">특정 전공에 소속됨이 없이 1학년 과정보내며 2학년 진학할 때에 구체적인 전공을 선택하는 학과</a></span>
+			</div>-->
+
+
+	</div>
+	</div>
+</div><!-- hx-main-link-tab 대학원·대학·학과 -->
+
+
+
+<div class="hx-main-link-tab" style="display:none;">
+	<!--<h3>기관·사업단·연구</h3>-->
+
+
+	<div class="main_link_box01">
+	<div class="main_link_box03">
+
+
+			<div class="ml_box13 mlbg01 hx-main-link-list">
+				<h4><span>대학본부</span></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="대학본부 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102003002000">교무과</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102003002002">학사관리과</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102003002003">학생지원과</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102003002011">취업지원과</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102003002004">기획평가과</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102003002005">대외협력과</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102003002006">총무과</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102003002007">재무과</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000102003002008">시설과</a></li>
+					<li><a href="/sanhak/index.kunsan" target="_blank" title="새창열림">산학협력단</a></li>
+					<li><a href="/saemangeum/index.kunsan" target="_blank" title="새창열림">새만금캠퍼스본부</a></li>
+					<li><a href="/iphak/index.kunsan" target="_blank" title="새창열림">입학관리본부</a></li>
+
+				</ul>
+			</div>
+
+			<div class="ml_box14 mlbg02 hx-main-link-list">
+				<h4><span>교육/지원시설</span></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="교육/지원시설 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="http://library.kunsan.ac.kr/" target="_blank" title="새창열림">도서관</a></li>
+					<li><a href="/comcenter/index.kunsan" target="_blank" title="새창열림">정보전산원</a></li>
+					<li><a href="/dormi/index.kunsan" target="_blank" title="새창열림">학생생활관</a></li>
+					<!-- li><a href="/liberaledu/index.kunsan" target="_blank" title="새창열림">교양교육원</a></li-->
+					<li><a href="/talent_edu/index.kunsan" target="_blank" title="새창열림">황룡인재교육원</a></li>
+					<li><a href="http://ciele.kunsan.ac.kr/" target="_blank" title="새창열림">국제교류교육원</a></li >
+					<li><a href="http://www.kunsan.ac.kr/life/index.kunsan?contentsSid=4020" target="_blank" title="새창열림">평생교육원</a></li >
+				</ul>
+			</div>
+
+
+			<div class="ml_box15 mlbg01 hx-main-link-list">
+				<h4><span>부속시설</span></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="부속시설 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="http://www.kunsan.ac.kr/museum/index.kunsan" target="_blank" title="새창열림">박물관</a></li>
+					<li><a href="http://www.hwangryong.com/" target="_blank" title="새창열림">언론사</a></li>
+					<li><a href="http://gongsil.kunsan.ac.kr/" target="_blank" title="새창열림">공동실험실습관</a></li>
+					<li><a href="http://www.kssge.com/" target="_blank" title="새창열림">과학영재교육원</a></li>
+					<li><a href="/support/index.kunsan" target="_blank" title="새창열림">장애학생지원센터</a></li>
+					<li><a href="/gallery/index.kunsan" target="_blank" title="새창열림">미술관</a></li>
+					<li><a href="/icee/index.kunsan" target="_blank" title="새창열림">공학교육혁신센터</a></li>					<li><a href="https://career.kunsan.ac.kr/main.do  " target="_blank" title="새창열림">대학일자리센터</a></li>
+					<li><a href="/engeneering_factory/index.kunsan" target="_blank" title="새창열림">공과대학 부속공장</a></li>
+					<li><a href="/index.kunsan?menuCd=DOM_000000107008000000" target="_blank" title="새창열림">해양과학대학 해양수산실습원</a></li>
+					<li><a href="/haerimho/index.kunsan" target="_blank" title="새창열림">해양과학대학 선박실습운영센터</a></li>
+				</ul>
+			</div>
+
+
+
+
+			<div class="ml_box11 mlbg02 hx-main-link-list">
+				<h4><span>총장직속기관</span></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="총장직속기관 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="http://linc.kunsan.ac.kr/" target="_blank" title="새창열림">산학협력선도대학(LINC+) 육성사업단</a></li>
+					<li><a href="/155rotc/index.kunsan" target="_blank" title="새창열림">학생군사교육단</a></li>
+					<li><a href="/prime/index.kunsan" target="_blank" title="새창열림">프라임사업단</a></li>
+				</ul>
+			</div>
+
+
+			<div class="ml_box12 mlbg01 hx-main-link-list">
+				<h4><span>법인/기업</span></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="법인/기업 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="http://fund.kunsan.ac.kr/" target="_blank" title="새창열림">발전지원재단</a></li>
+					<li><a href="http://kuncoop.kunsan.ac.kr/" target="_blank" title="새창열림">소비자생활협동조합</a></li>
+					<li><a href="http://www.3dpro.kr/" target="_blank" title="새창열림">쓰리디프로</a></li>
+				</ul>
+			</div>
+			<div class="ml_box16 mlbg02 hx-main-link-list">
+				<h4><span>연구시설</span></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="연구시설 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="http://inmoon.mireene.com/" target="_blank" title="새창열림">인문과학연구소</a></li>
+					<li><a href="/culture/index.kunsan" target="_blank" title="새창열림">문화사상연구소</a></li>
+                                        <li><a href="/board/list.kunsan?boardId=BBS_0000735&menuCd=DOM_000000107011000000&contentsSid=4256&cpath=" target="_blank" title="새창열림">지역개발연구소</a></li>
+					<li><a href="/bubhak/index.kunsan" target="_blank" title="새창열림">법학연구소</a></li>
+					<li><a href="/crc01/index.kunsan" target="_blank" title="새창열림">해양개발연구소</a></li>
+					<li><a href="/fishsci/index.kunsan" target="_blank" title="새창열림">수산과학연구소</a></li>								<li><a href="/index.kunsan?contentsSid=811" target="_blank" title="새창열림">공학연구소</a></li>
+					<li><a href="/infotech/index.kunsan" target="_blank" title="새창열림">정보통신기술연구소</a></li>
+					<li><a href="/icaks/index.kunsan" target="_blank" title="새창열림">현대미술연구소</a></li>
+					<li><a href="/hab/index.kunsan" target="_blank" title="새창열림">녹조적조연구센터</a></li>
+					<li><a href="/serc/index.kunsan" target="_blank" title="새창열림">새만금환경연구센터</a></li>
+					<li><a href="http://www.katic.or.kr/" target="_blank" title="새창열림">기술혁신센터</a></li>
+					<li><a href="/kunbi/index.kunsan" target="_blank" title="새창열림">창업보육센터</a></li>								<li><a href="/index.kunsan?contentsSid=1469" target="_blank" title="새창열림">중소기업산학협력센터</a></li>
+					<li><a href="/windkorea/index.kunsan" target="_blank" title="새창열림"> 풍력기술연구센터</a></li>
+					<li><a href="/gaya/index.kunsan" target="_blank" title="새창열림">가야문화연구소</a></li>
+					<!--
+					<li><a href="" target="_blank" title="새창열림">기초과학연구소</a></li>
+					<li><a href="" target="_blank" title="새창열림">해양개발연구소</a></li>
+					<li><a href="" target="_blank" title="새창열림">공학연구소</a></li>
+					<li><a href="" target="_blank" title="새창열림">기술혁신센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">중소기업산학협력센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">창업보육센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">중소기업산학협력센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">새만금종합개발연구원</a></li>
+					<li><a href="" target="_blank" title="새창열림">스포츠과학연구소</a></li>
+					<li><a href="" target="_blank" title="새창열림">현대음악연구소</a></li>
+					<li><a href="" target="_blank" title="새창열림">해양생물연구교육센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">풍력기술연구센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">동물계통분류학연구실</a></li>
+					<li><a href="" target="_blank" title="새창열림">균류분류생태연구실</a></li>
+					<li><a href="" target="_blank" title="새창열림">미생물생태학연구실</a></li>
+					<li><a href="" target="_blank" title="새창열림">식물분자생리학연구실</a></li>
+					<li><a href="" target="_blank" title="새창열림">유전학연구실</a></li>
+					<li><a href="" target="_blank" title="새창열림">해양생물자원보전연구실</a></li>
+					<li><a href="" target="_blank" title="새창열림">해양산업기술교육원</a></li>
+					<li><a href="" target="_blank" title="새창열림">최고수산경영자 양성과정</a></li>
+					<li><a href="" target="_blank" title="새창열림">독도해양생물생태연구실</a></li>
+					<li><a href="" target="_blank" title="새창열림">로봇 및 지능 제어 연구실</a></li>
+					<li><a href="" target="_blank" title="새창열림">자성체물성 연구실</a></li>
+					-->
+				</ul>
+			</div>
+
+
+			<div class="ml_box17 mlbg01 hx-main-link-list">
+				<h4><span>산학협력단 산하기관/사업단</span></h4>
+				<form action="#NONE" method="get" target="_blank">
+					<select title="산학협력단 자세히보기"><option value="">자세히보기</option></select>
+					<input type="submit" class="bbs_sbtn01" value="이동" title="새창열림" />
+				</form>
+				<ul>
+					<li><a href="http://eco.kunsan.ac.kr/" target="_blank" title="새창열림">친환경분석연구센터</a></li>
+					<li><a href="/ceca/index.kunsan" target="_blank" title="새창열림">농생명융합기술센터</a></li>
+					<li><a href="http://wisetjeonbuk.kr/" target="_blank" title="새창열림">WISET전북지역군산대사업단</a></li>
+					<li><a href="http://linc.kunsan.ac.kr/" target="_blank" title="새창열림">산학협력선도대학육성사업단</a></li>
+					<li><a href="http://me.jalanada.com/" target="_blank" title="새창열림">새만금중일ME육성사업단</a></li>
+					<li><a href="http://ict.kunsan.ac.kr/" target="_blank" title="새창열림">새만금ICT융합인재양성사업단</a></li>
+					<li><a href="http://cafe.naver.com/kunsansocial/" target="_blank" title="새창열림">희망나눔청년사업단</a></li>
+					<li><a href="http://happylog.naver.com/hyonanum.do" target="_blank" title="새창열림">보령효나눔복지센터</a></li>
+					<li><a href="http://gunsanfc.familynet.or.kr/" target="_blank" title="새창열림">군산시건강가정지원센터</a></li>
+					<li><a href="https://www.liveinkorea.kr/" target="_blank" title="새창열림">군산시다문화가족지원센터</a></li>
+					<li><a href="https://ccfsm.foodnara.go.kr/gunsan/" target="_blank" title="새창열림">군산시어린이급식관리지원센터</a></li>
+					<li><a href="/happychildren/index.kunsan" target="_blank" title="새창열림">어린이행복연구소</a></li>
+					<li><a href="/bk21plus/index.kunsan" target="_blank" title="새창열림">BK21플러스글로컬지반 환경공학연구팀</a></li>
+					<li><a href="http://hlc.kunsan.ac.kr" target="_blank" title="새창열림">인문산학협력센터</a></li>
+					<li><a href="http://www.aiascenter.kr" target="_blank" title="새창열림">인공지능자율시스템센터 </a></li>
+					<li><a href="http://www.kunsan.ac.kr/kisma" target="_blank" title="새창열림">ICT융합조선해양연구원  </a></li>
+					<li><a href="http://www.kunsan.ac.kr/earthquake/index.kunsan" target="_blank" title="새창열림">지진전문인력양성사업단  </a></li>
+					<li><a href="http://bk21peco.kunsan.ac.kr/" target="_blank" title="새창열림">BK21플러스 친환경새만금인프라개발글로벌 인재양성팀</a></li>
+					<!--
+					<li><a href="" target="_blank" title="새창열림">ICT융합조선해양연구원</a></li>
+					<li><a href="" target="_blank" title="새창열림">차세대건설기계알앤디센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">기계부품설계신뢰성기술센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">테크숍센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">인문정보예술융합센터</a></li>
+
+					<li><a href="" target="_blank" title="새창열림">수송기계부품설계인력양성사업단</a></li>
+					<li><a href="" target="_blank" title="새창열림">조선해양전문인력양성사업단</a></li>
+					<li><a href="" target="_blank" title="새창열림">취업연계특성화사업단</a></li>
+
+					<li><a href="" target="_blank" title="새창열림">해양지반연동고급인력양성사업단</a></li>
+					<li><a href="" target="_blank" title="새창열림">글로벌물류인력양성사업단</a></li>
+					<li><a href="" target="_blank" title="새창열림">인문도시센터</a></li>
+
+					<li><a href="" target="_blank" title="새창열림">한국사회서비스센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">금호어울림국공립어린이집센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">ICT특성화취업연계형사업단</a></li>
+					<li><a href="" target="_blank" title="새창열림">새만금창의융합센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">지식재산교육선도사업단</a></li>
+					<li><a href="" target="_blank" title="새창열림">BK21친환경새만금인프라개발글로벌인재양성사업팀</a></li>
+
+					<li><a href="" target="_blank" title="새창열림">전북역사문화교육연구소 </a></li>
+					<li><a href="" target="_blank" title="새창열림">인공지능무인시스템연구센터</a></li>
+					<li><a href="" target="_blank" title="새창열림">전북씨그랜트센터</a></li>
+					-->
+				</ul>
+			</div>
+
+
+	</div>
+	</div>
+</div><!-- hx-main-link-tab KNU시설 -->
+
+
+
+
+
+</div><!--e:main_link-->
+
+
+
+
+
+</div>
+<!-- e:ly_center_mom -->
+</div>
+<!-- e:main_guide05 -->
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+
+
+
+function openPopupWin(name, URL, left, top, width, height, scrollbars) {
+	var specs = 'location=0,menubar=0,resizable=0,status=0,titlebar=0,toolbar=0';//channelmode(no),directories(yes:obsolete),fullscreen(no)
+	if (scrollbars!=null && scrollbars!='null' && scrollbars!='') {
+		scrollbars = (scrollbars=='Y' || scrollbars=='yes' || scrollbars=='1' || scrollbars=='true' || scrollbars==true) ? '1' : '0';
+		specs += ',scrollbars='+scrollbars;
+	}
+	if (width!=null && width!='null' && width!='') {
+		width = parseInt(width.replace('px',''));
+		if (!isNaN(width) && width > 100) {
+			specs += ',width='+width;
+		} else width = null;
+	} else width = null;
+	if (height!=null && height!='null' && height!='') {
+		height = parseInt(height.replace('px',''));
+		if (!isNaN(height) && height > 100) {
+			specs += ',height='+height;
+		} else height = null;
+	} else height = null;
+	if (left!=null && left!='null' && left!='') {
+		left = parseInt(left.replace('px',''));
+		if (!isNaN(left)) {
+			if (left < 0 || width == null) left = 0;
+			else left = ((screen.availWidth || window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) - width) / 2;
+			specs += ',left='+left;
+		}
+	}
+	if (top!=null && top!='null' && top!='') {
+		top = parseInt(top.replace('px',''));
+		if (!isNaN(top)) {
+			if (top < 0 || height == null) top = 0;
+			else top = ((screen.availHeight || window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) - height) / 2;
+			specs += ',top='+top;
+		}
+	}
+	var w = window.open(URL, name, specs);
+	if (w != null) w.focus();
+	return w;
+}
+//]]></script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+<!-- e:콘테이너 -->
+
+
+
+
+<!-- s:공통 카피라이트(footer) -->
+<!-- s:footer -->
+
+<div id="footer">
+<div class="ly_center_mom">
+
+    <h1 class="logo_copy pcv_moh"><img src="/images/001kunsan/inc/logo.png" alt="군산대학교" /></h1>
+
+    <div class="address">
+
+    <div class="add_txt01">
+    <ul>
+    <li><a href="/index.kunsan?menuCd=DOM_000000107006000000" class="f_privacy">개인정보처리방침</a></li>
+    <li><a href="/index.kunsan?menuCd=DOM_000000107009000000">영상정보처리기기운영·관리방침</a></li>
+    <li><a href="/index.kunsan?menuCd=DOM_000000102001001000">사이버캠퍼스투어</a></li>
+    <li><a href="/index.kunsan?menuCd=DOM_000000102006000000">오시는길</a></li>
+    <li><a href="/index.kunsan?menuCd=DOM_000000107002000000">사이트맵</a></li>
+    </ul>
+    </div>
+
+
+    <div id="copyright">
+    <span>(우)54150, 전라북도 군산시 대학로 558(미룡동) / TEL.063) 469-4113~4</span>
+    <span class="f_copy">Copyright(c) 2013 Kunsan National University. All rights reserved.</span>
+    </div>
+
+
+
+
+    
+
+
+    </div>
+
+	<div class="wa">
+    <a href="/synap/skin/doc.html?fn=155165921900100.pdf&rs=/upload_data/Synap/CNT_ATCHDOWN/&cpath=" target="_blank" title="새창열림"><img src="/upload_data/board_data/CNT_ATCHDOWN/151979316869873.png" alt="과학기술정보통신부 웹접근성 품질인증마크 (사)한국장애인단체총연합회 한국웹접근성인증평가원"></a>
+    </div>
+    <div class="first_top_go">
+    <a href="#wrap"><img src="/images/000inc/top01.png" alt="맨위로" /></a>
+    </div>
+
+
+
+
+
+</div><!-- e:ly_center_mom -->
+</div><!-- e:footer -->
+                                      
+<!-- e:공통 카피라이트 -->
+
+<!-- s:공통_방문자통계 -->
+
+	<img style="width: 0px; height: 0px; display: none;" alt="방문자 통계" src="/visitcounter/visitcounter.kunsan?refer=DOM_0000001">
+                
+	
+
+
+
+	<script type="text/javascript">
+	//window.open('http://www.kunsan.ac.kr/index.kunsan?contentsSid=3964','popups','width=500,height=550,status=no,location=no')
+
+	</script>
+
+
+                                                                                                                   
+<!-- e:공통_방문자통계 -->
+
+
+
+</div>
+<!-- e:wrap -->
+
+<!-- s:구글_방문자통계 -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105154068-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- s:구글_방문자통계 -->
+
+<!-- s:네이버_방문자통계 -->
+<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "32ccedd92e3bdc";
+wcs_do();
+</script>
+<!-- s:네이버_방문자통계 -->
+
+
+</body>
+</html>                                                                                                                                                                                                                    
