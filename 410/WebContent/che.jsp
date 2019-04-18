@@ -9,7 +9,9 @@
 </head>
 <body>
 <%
-out.println(session.getAttribute("productlist"));%>
+out.println(session.getAttribute("productlist"));
+
+%>
 
 <form action="setpro.jsp">
 <input type="submit" value="돌아가기">

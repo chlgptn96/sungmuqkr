@@ -15,7 +15,8 @@ String id = request.getParameter("id");
 </head>
 <body>
 
-<%=request.getParameter("id") %>님 환영합니다<br>
+<%=request.getParameter("id") %>
+${id}님 환영합니다<br>
 목록<br>
 <form action="add1.jsp">
 <select name="pro">
