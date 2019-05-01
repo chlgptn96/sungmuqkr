@@ -11,6 +11,7 @@
 <form class="box" action="loginAction.me" method="post" >
 
 <h1>Login</h1>
+
 <input type="text" name="email" placeholder="id">
 <input type="password" name="pw" placeholder="password">
 <input type="submit" value="Login" >
